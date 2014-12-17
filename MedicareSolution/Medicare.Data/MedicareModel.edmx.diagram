@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="87f16decbddd4c4eb01d3836950fa9eb" Name="Diagram1">
+        <EntityTypeShape EntityType="MedicareDevModel.Accreditation" Width="1.5" PointX="17.25" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Affiliation" Width="1.5" PointX="17.25" PointY="87.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Appointment" Width="1.5" PointX="16.5" PointY="78.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Award" Width="1.5" PointX="17.25" PointY="64.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.BillingCurrency" Width="1.5" PointX="18" PointY="97.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.City" Width="1.5" PointX="6" PointY="102.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.College" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Country" Width="1.5" PointX="3.75" PointY="102.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Degree" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.FavoriteProvider" Width="1.5" PointX="16.5" PointY="75.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Gender" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileAllergy" Width="1.5" PointX="5.25" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileBloodGlucose" Width="1.5" PointX="5.25" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileBloodPressure" Width="1.5" PointX="5.25" PointY="55.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileCholestrol" Width="1.5" PointX="5.25" PointY="58.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileDiet" Width="1.5" PointX="5.25" PointY="62.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileExercise" Width="1.5" PointX="5.25" PointY="66.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileFamilyHistory" Width="1.5" PointX="5.25" PointY="70.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileHeight" Width="1.5" PointX="5.25" PointY="74.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileImmunization" Width="1.5" PointX="5.25" PointY="78" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileLabTest" Width="1.5" PointX="5.25" PointY="81.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileMedicalCondition" Width="1.5" PointX="5.25" PointY="85.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileMedicalDocument" Width="1.5" PointX="5.25" PointY="89.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileMedication" Width="1.5" PointX="5.25" PointY="92.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileProcedure" Width="1.5" PointX="5.25" PointY="95.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.HealthProfileWeight" Width="1.5" PointX="5.25" PointY="99.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Insurance" Width="1.5" PointX="17.25" PointY="93.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Language" Width="1.5" PointX="20.25" PointY="93.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Locality" Width="1.5" PointX="20.25" PointY="65.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Patient" Width="1.5" PointX="8.25" PointY="77.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.PatientHealthTopic" Width="1.5" PointX="10.5" PointY="86.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.PatientQuery" Width="1.5" PointX="16.5" PointY="82.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.PatientQueryFollowUp" Width="1.5" PointX="18.75" PointY="90.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.PatientQueryPayment" Width="1.5" PointX="16.5" PointY="70.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.PatientQueryProvider" Width="1.5" PointX="24.75" PointY="80.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Practice" Width="1.5" PointX="20.25" PointY="96.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.PracticeType" Width="1.5" PointX="18" PointY="100.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Premis" Width="1.5" PointX="17.25" PointY="67.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Provider" Width="1.5" PointX="11.25" PointY="74" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderAccreditation" Width="1.5" PointX="19.5" PointY="75.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderAffiliation" Width="1.5" PointX="19.5" PointY="81.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderAvailability" Width="1.5" PointX="13.5" PointY="74.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderAward" Width="1.5" PointX="19.5" PointY="72.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderContact" Width="1.5" PointX="13.5" PointY="80.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderEducation" Width="1.5" PointX="13.5" PointY="84.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderExperience" Width="1.5" PointX="13.5" PointY="87.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderFee" Width="1.5" PointX="13.5" PointY="90.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderInsurance" Width="1.5" PointX="19.5" PointY="84.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderLanguage" Width="1.5" PointX="22.5" PointY="78.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderLocality" Width="1.5" PointX="22.5" PointY="75.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderPhoto" Width="1.5" PointX="13.5" PointY="101.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderPractice" Width="1.5" PointX="22.5" PointY="81.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderPremis" Width="1.5" PointX="19.5" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderReview" Width="1.5" PointX="19.5" PointY="78.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderService" Width="1.5" PointX="19.5" PointY="87.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderSpecialty" Width="1.5" PointX="22.5" PointY="72.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderTreatment" Width="1.5" PointX="22.5" PointY="84.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderType" Width="1.5" PointX="9" PointY="74.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ProviderVideo" Width="1.5" PointX="13.5" PointY="118.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.RegistrationCouncil" Width="1.5" PointX="9" PointY="83.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.SecurityQuestion" Width="1.5" PointX="0.75" PointY="78.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Service" Width="1.5" PointX="17.25" PointY="105.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.ServiceType" Width="1.5" PointX="15" PointY="105.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Specialty" Width="1.5" PointX="14.25" PointY="93.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.State" Width="1.5" PointX="14.25" PointY="68.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.Treatment" Width="1.5" PointX="20.25" PointY="104.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.User" Width="1.5" PointX="3" PointY="76" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.UserFeedback" Width="1.5" PointX="5.25" PointY="130.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.UserFollowDoctor" Width="1.5" PointX="22.5" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.UserFollowPatient" Width="1.5" PointX="13.5" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.UserLoginAudit" Width="1.5" PointX="5.25" PointY="133.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.UserPrefrence" Width="1.5" PointX="5.25" PointY="136.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicareDevModel.UserRole" Width="1.5" PointX="0.75" PointY="75.875" IsExpanded="true" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderAccreditation_Accreditation" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderAccreditation_Accreditation1" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderAffiliation_Affiliation" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Appointment_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Appointment_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderAward_Award" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Practice_BillingCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_City_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Locality_City" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Patient_City" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_PatientQueryPayment_City" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Practice_City" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Locality_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Patient_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_PatientQueryPayment_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Practice_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_State_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_FavoriteProvider_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_FavoriteProvider_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddAllergy_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddBloodGlucose_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddBloodPressure_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddCholestrol_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddDiet_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddExercise_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddFamilyHistory_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddHeight_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddImmunization_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddLabTest_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddMedicalCondition_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddMedicalDocument_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddMedication_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddProcedure_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_AddWeight_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderInsurance_Insurance" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderLanguage_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Practice_Locality" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderLocality_Locality" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Patient_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_PatientHealthTopics_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_PatientQuery_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_PatientQueryPayment_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderReview_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_UserFollowPatients_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_PatientQuery_Specialty" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_PatientQueryFollowUp_PatientQuery" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_PatientQueryProvider_PatientQuery" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_PatientQueryPayment_State" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_PatientQueryProvider_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Practice_PracticeType" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Practice_State" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderPractice_Practice" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderPremises_Premises" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Provider_ProviderType" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Provider_RegistrationCouncil" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Provider_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderAccreditation_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderAffiliation_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderAvailability_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderAward_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderContacts_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderEducation_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderExperience_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderFee_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderInsurance_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderLanguage_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderLocality_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderPhoto_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderPractice_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderPremises_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderReview_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderService_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderSpecialty_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderTreatment_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderVideo_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_UserFollowDoctors_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderSpecialty_Specialty" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_ProviderTreatment_Treatment" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_User_SecurityQuestion" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_Service_ServiceType" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_User_UserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_UserFeedback_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_UserFollowDoctors_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_UserFollowPatients_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_UserLoginAudit_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicareDevModel.FK_UserPrefrences_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

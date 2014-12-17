@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74D80BFD-3FAB-4423-8110-EDE20CAFFAA2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Medicare.DataModel</RootNamespace>
+    <AssemblyName>Medicare.DataModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Accreditation.cs" />
+    <Compile Include="Models\Insurance.cs" />
+    <Compile Include="Models\Premises.cs" />
+    <Compile Include="Models\ProviderAccreditation.cs" />
+    <Compile Include="Models\ProviderCollege.cs" />
+    <Compile Include="Models\ProviderDegree.cs" />
+    <Compile Include="Models\Affiliation.cs" />
+    <Compile Include="Models\Award.cs" />
+    <Compile Include="Models\Appointment.cs" />
+    <Compile Include="Models\City.cs" />
+    <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\College.cs" />
+    <Compile Include="Models\Facility.cs" />
+    <Compile Include="Models\FacilityType.cs" />
+    <Compile Include="Models\FavoriteProvider.cs" />
+    <Compile Include="Models\Gender.cs" />
+    <Compile Include="Models\HealthProfileAllergy.cs" />
+    <Compile Include="Models\HealthProfileBloodGlucose.cs" />
+    <Compile Include="Models\HealthProfileBloodPressure.cs" />
+    <Compile Include="Models\HealthProfileCholestrol.cs" />
+    <Compile Include="Models\HealthProfileDiet.cs" />
+    <Compile Include="Models\HealthProfileExercise.cs" />
+    <Compile Include="Models\HealthProfileFamilyHistory.cs" />
+    <Compile Include="Models\HealthProfileHeight.cs" />
+    <Compile Include="Models\HealthProfileImmunization.cs" />
+    <Compile Include="Models\HealthProfileLabTest.cs" />
+    <Compile Include="Models\HealthProfileMedicalCondition.cs" />
+    <Compile Include="Models\HealthProfileMedicalDocument.cs" />
+    <Compile Include="Models\HealthProfileMedication.cs" />
+    <Compile Include="Models\HealthProfileProcedure.cs" />
+    <Compile Include="Models\HealthProfileWeight.cs" />
+    <Compile Include="Models\Language.cs" />
+    <Compile Include="Models\Locality.cs" />
+    <Compile Include="Models\MessageStatus.cs" />
+    <Compile Include="Models\MessageType.cs" />
+    <Compile Include="Models\Patient.cs" />
+    <Compile Include="Models\PatientHealthTopics.cs" />
+    <Compile Include="Models\PatientQuery.cs" />
+    <Compile Include="Models\PatientQueryFollowUp.cs" />
+    <Compile Include="Models\PatientQueryPayment.cs" />
+    <Compile Include="Models\PatientQueryProvider.cs" />
+    <Compile Include="Models\PracticeType.cs" />
+    <Compile Include="Models\Practice.cs" />
+    <Compile Include="Models\Provider.cs" />
+    <Compile Include="Models\ProviderAffiliation.cs" />
+    <Compile Include="Models\ProviderAvailability.cs" />
+    <Compile Include="Models\ProviderAward.cs" />
+    <Compile Include="Models\ProviderEducation.cs" />
+    <Compile Include="Models\ProviderExperience.cs" />
+    <Compile Include="Models\ProviderInsurance.cs" />
+    <Compile Include="Models\ProviderLanguage.cs" />
+    <Compile Include="Models\ProviderLocality.cs" />
+    <Compile Include="Models\ProviderFee.cs" />
+    <Compile Include="Models\ProviderContact.cs" />
+    <Compile Include="Models\ProviderPractice.cs" />
+    <Compile Include="Models\ProviderPhoto.cs" />
+    <Compile Include="Models\ProviderPremis.cs" />
+    <Compile Include="Models\ProviderService.cs" />
+    <Compile Include="Models\ProviderSpecialty.cs" />
+    <Compile Include="Models\ProviderReview.cs" />
+    <Compile Include="Models\ProviderTreatment.cs" />
+    <Compile Include="Models\RegistrationCouncil.cs" />
+    <Compile Include="Models\ProviderVideo.cs" />
+    <Compile Include="Models\SecurityQuestion.cs" />
+    <Compile Include="Models\Service.cs" />
+    <Compile Include="Models\ServiceType.cs" />
+    <Compile Include="Models\Specialty.cs" />
+    <Compile Include="Models\SpecialtyLocality.cs" />
+    <Compile Include="Models\State.cs" />
+    <Compile Include="Models\Degree.cs" />
+    <Compile Include="Models\Treatment.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserFeedback.cs" />
+    <Compile Include="Models\UserFollowDoctors.cs" />
+    <Compile Include="Models\UserFollowPatients.cs" />
+    <Compile Include="Models\UserLoginAudit.cs" />
+    <Compile Include="Models\UserPrefrences.cs" />
+    <Compile Include="Models\UserRole.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

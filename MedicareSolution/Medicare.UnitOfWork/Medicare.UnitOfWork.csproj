@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61133175-3C19-494F-BD63-E587A062D11E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Medicare.UnitOfWork</RootNamespace>
+    <AssemblyName>Medicare.UnitOfWork</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="StaffUOW.cs" />
+    <Compile Include="ForgotPasswordUOW.cs" />
+    <Compile Include="DoctorEditDetailsUOW.cs" />
+    <Compile Include="PracticeEditDetailsUOW.cs" />
+    <Compile Include="PracticesSearchUOW.cs" />
+    <Compile Include="DoctorsSearchUOW.cs" />
+    <Compile Include="Base\BaseUnitOfWork.cs" />
+    <Compile Include="AuthenticateUOW.cs" />
+    <Compile Include="ChangePasswordUOW.cs" />
+    <Compile Include="EditProfileUOW.cs" />
+    <Compile Include="ProviderRegistrationUOW.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Medicare.Core\Medicare.Core.csproj">
+      <Project>{98afd916-b534-4665-ad52-12766c55e0fa}</Project>
+      <Name>Medicare.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Medicare.DataModel\Medicare.DataModel.csproj">
+      <Project>{74d80bfd-3fab-4423-8110-ede20caffaa2}</Project>
+      <Name>Medicare.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Medicare.Data\Medicare.Data.csproj">
+      <Project>{ce57fb44-47d4-4976-9f52-566b80faaac5}</Project>
+      <Name>Medicare.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Medicare.DomainModel\Medicare.DomainModel.csproj">
+      <Project>{2e83bfd7-daa1-44fa-90ae-4f26bfeb6be7}</Project>
+      <Name>Medicare.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Medicare.Factory\Medicare.Factory.csproj">
+      <Project>{b5a9fd8c-710d-4924-b270-af57db31e819}</Project>
+      <Name>Medicare.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Medicare.Repository\Medicare.Repository.csproj">
+      <Project>{30bcc38a-b0b3-430e-ac25-e0bf7be33870}</Project>
+      <Name>Medicare.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

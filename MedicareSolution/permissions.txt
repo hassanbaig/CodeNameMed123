@@ -1,10 +1,8 @@
-C:\Users\khusroo.hayat>ICACLS C:\Users\khusroo.hayat\Documents\GitHub\PMS\Medica
-reSolution\Medicare.WebAPI /grant "IIS AppPool\.NET v4.5":WRX
+C:\Users\khusroo.hayat>ICACLS C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\MedicareSolution\Medicare.WebAPI /grant "IIS AppPool\.NET v4.5":WRX
 processed file: C:\Users\khusroo.hayat\Documents\GitHub\PMS\MedicareSolution\Med
 icare.WebAPI
 
-C:\Users\khusroo.hayat>ICACLS C:\Users\khusroo.hayat\Documents\GitHub\PMS\Medica
-reSolution\Medicare.Presentation /grant "IIS AppPool\.NET v4.5":WRX
+C:\Users\khusroo.hayat>ICACLS C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\MedicareSolution\Medicare.Presentation /grant "IIS AppPool\.NET v4.5":WRX
 processed file: C:\Users\khusroo.hayat\Documents\GitHub\PMS\MedicareSolution\Med
 icare.Presentation
 

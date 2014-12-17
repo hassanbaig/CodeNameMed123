@@ -188,7 +188,7 @@ namespace Medicare.WebAPI.Controllers
             domainModel = factory.DomainModelFactory.CreateDomainModel(typeof(PracticeEditDetails));
             if (providerId == 0)
             {
-                domainModel.Fill(HashHelper.PracticeEditDetailsAddPracticeTimings(3, dataList[0], Convert.ToInt64(dataList[1]),
+                domainModel.Fill(HashHelper.PracticeEditDetailsAddPracticeTimings(14, dataList[0], Convert.ToInt64(dataList[1]),
                                                         monday, monOpenHour1, monOpenMinute1, monCloseHours1, monCloseMinutes1,
                                                             monOpenHour2, monOpenMinute2, monCloseHours2, monCloseMinutes2,
                                                                 tuesday, tueOpenHour1, tueOpenMinute1, tueCloseHours1, tueCloseMinutes1,
@@ -206,7 +206,7 @@ namespace Medicare.WebAPI.Controllers
             }
             else
             {
-                domainModel.Fill(HashHelper.PracticeEditDetailsAddPracticeTimings(3, dataList[0], (long)providerId, 
+                domainModel.Fill(HashHelper.PracticeEditDetailsAddPracticeTimings(14, dataList[0], (long)providerId, 
                                                         monday, monOpenHour1, monOpenMinute1, monCloseHours1, monCloseMinutes1,
                                                             monOpenHour2, monOpenMinute2, monCloseHours2, monCloseMinutes2,
                                                                 tuesday, tueOpenHour1, tueOpenMinute1, tueCloseHours1, tueCloseMinutes1,
@@ -223,7 +223,7 @@ namespace Medicare.WebAPI.Controllers
                                                                                                             sunOpenHour2, sunOpenMinute2, sunCloseHours2, sunCloseMinutes2));
             }
             domainService = factory.DomainServiceFactory.CreateDomainService(typeof(StaffDomainService));
-            practiceEditDetails = (PracticeEditDetails)domainService.Update(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.DOCTOR_EDIT_DETAILS_ADD_CONSULTATION);
+            practiceEditDetails = (PracticeEditDetails)domainService.Update(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_ADD_TIMINGS);
             return Ok(practiceEditDetails.ResponseMessage);
         }
 

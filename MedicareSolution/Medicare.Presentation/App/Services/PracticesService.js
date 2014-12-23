@@ -21,6 +21,7 @@
         var manager = emFactory.newManager();
 
         var service = {
+            getPracticeDetails : getPracticeDetails,
             addPracticeDetails: addPracticeDetails,
             addPracticeLocation: addPracticeLocation,
             addPracticeContacts: addPracticeContacts,
@@ -66,9 +67,25 @@
             getAddedInsurances: getAddedInsurances,
             addPracticeInsurances: addPracticeInsurances,
             addToPracticeInsurances: addToPracticeInsurances,
-            removePracticeInsurances: removePracticeInsurances
+            removePracticeInsurances: removePracticeInsurances,
+
+            //Currency
+            getPracticeBillingCurrency: getPracticeBillingCurrency
         };
         return service;
+
+        //Billing Currency
+        function getPracticeBillingCurrency() {
+
+            return breeze.EntityQuery.from('GetPracticeBillingCurrency').using(manager).execute().then('successful').catch('failed');
+        }
+
+        //Practice Detail
+        function getPracticeDetails(initialValues) {
+
+            return breeze.EntityQuery.from('GetPracticeDetails').withParameters(initialValues)
+                  .using(manager).execute().then('successful').catch('failed');
+        }
 
         function addPracticeDetails(initialValues) {
 
@@ -76,6 +93,8 @@
                   .using(manager).execute().then('successful').catch('failed');
         }
 
+
+        //Location
         function addPracticeLocation(initialValues) {
 
             return breeze.EntityQuery.from('AddPracticeLocation').withParameters(initialValues)
@@ -88,12 +107,21 @@
                   .using(manager).execute().then('successful').catch('failed');
         }
 
+
+        // Practice Timing
+
+        function getPracticeTimings(initialValues) {
+
+            return breeze.EntityQuery.from('GetPracticeTimings').withParameters(initialValues)
+                  .using(manager).execute().then('successful').catch('failed');
+        }
+
         function addPracticeTimings(initialValues) {
 
             return breeze.EntityQuery.from('AddPracticeTimings').withParameters(initialValues)
                   .using(manager).execute().then('successful').catch('failed');
-        }
-
+        }     
+              
         //Services
         function getServices() {
             return breeze.EntityQuery.from('GetServices')
@@ -255,7 +283,6 @@
             return breeze.EntityQuery.from('AddPracticeInsurances').withParameters(initialValues)
                   .using(manager).execute().then('successful').catch('failed');
         }
-
 
         function addToPracticeInsurances(initialValues) {
 

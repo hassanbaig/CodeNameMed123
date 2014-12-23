@@ -9,7 +9,7 @@ namespace Medicare.WebAPI
     {
         public static List<long> GetSpecialties()
         {
-            //Medicare.Data.MedicareDevEntities db = new Data.MedicareDevEntities();
+            //Medicare.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<long> specialtiesList = new List<long>();
@@ -38,7 +38,7 @@ namespace Medicare.WebAPI
 
         public static List<string> GetServices()
         {
-            //Medicare.Data.MedicareDevEntities db = new Data.MedicareDevEntities();
+            //Medicare.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<string> servicesList = new List<string>();
@@ -53,7 +53,7 @@ namespace Medicare.WebAPI
 
         public static List<string> GetTravelServices()
         {
-            //Medicare.Data.MedicareDevEntities db = new Data.MedicareDevEntities();
+            //Medicare.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<string> travelServicesList = new List<string>();
@@ -68,7 +68,7 @@ namespace Medicare.WebAPI
 
         public static List<string> GetPremises()
         {
-            //Medicare.Data.MedicareDevEntities db = new Data.MedicareDevEntities();
+            //Medicare.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<string> premisesList = new List<string>();
@@ -84,7 +84,7 @@ namespace Medicare.WebAPI
 
         public static List<string> GetLanguages()
         {
-            //Medicare.Data.MedicareDevEntities db = new Data.MedicareDevEntities();
+            //Medicare.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<string> languagesList = new List<string>();
@@ -98,7 +98,7 @@ namespace Medicare.WebAPI
         }
         public static List<string> GetAccreditations()
         {
-            //Medicare.Data.MedicareDevEntities db = new Data.MedicareDevEntities();
+            //Medicare.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<string> accreditationsList = new List<string>();
@@ -114,7 +114,7 @@ namespace Medicare.WebAPI
 
         public static List<string> GetInsurances()
         {
-            //Medicare.Data.MedicareDevEntities db = new Data.MedicareDevEntities();
+            //Medicare.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<string> insurancesList = new List<string>();

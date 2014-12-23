@@ -44,7 +44,7 @@ namespace Medicare.WebAPI.Controllers
         [HttpGet]
         public IQueryable<Medicare.Data.Specialty> GetSpecialties()
         {
-            Medicare.Data.MedicareDevEntities db = new Data.MedicareDevEntities();
+            Medicare.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             
             //specialties.Add("Allergy and Immunology");
             //specialties.Add("Orthopaedics");

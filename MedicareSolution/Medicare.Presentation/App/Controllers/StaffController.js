@@ -312,6 +312,7 @@
         staffControllerVM.getCities = getCities;
         staffControllerVM.getLocalities = getLocalities;
         staffControllerVM.editProfile = editProfile;
+        //  staffControllerVM.Practice = Practice;
         staffControllerVM.getStaffDoctorDetails = getStaffDoctorDetails;
         staffControllerVM.addStaffDoctorDetails = addStaffDoctorDetails;
         staffControllerVM.getStaffDoctorContacts = getStaffDoctorContacts;        
@@ -773,6 +774,7 @@
 
         function getStaffDoctorDetails(providerId) {
             $scope.startSpin();
+            debugger;
             return staffService.getStaffDoctorDetails({ providerId: providerId }).then(function (data) {
                 var response = data.results;
                 staffControllerVM.staffDoctorDetailsDoctorDetailsList = response;                                
@@ -783,6 +785,7 @@
         }
 
         function setStaffDoctorDetails() {
+            debugger;
             if (staffControllerVM.staffDoctorDetailsDoctorDetailsList.length > 0) {
                 staffControllerVM.staffDoctorDetailsDoctorName = staffControllerVM.staffDoctorDetailsDoctorDetailsList[0].doctorDetailsDoctorName;
                 staffControllerVM.staffDoctorDetailsGender = staffControllerVM.staffDoctorDetailsDoctorDetailsList[0].doctorDetailsGender;
@@ -794,6 +797,8 @@
                 staffControllerVM.staffDoctorDetailsDoctorDescription = staffControllerVM.staffDoctorDetailsDoctorDetailsList[0].doctorDetailsDoctorDescription;
             }
         }
+
+
 
         function getStaffDoctorContacts(providerId) {
             $scope.startSpin();
@@ -1058,6 +1063,7 @@
 
         function getStaffDoctorConsultation(providerId) {
             $scope.startSpin();
+            debugger;
             return staffService.getStaffDoctorConsultation({ providerId: providerId }).then(function (data) {
                 var response = data.results;
                 staffControllerVM.staffDoctorDetailsDoctorConsultationList = response;                                

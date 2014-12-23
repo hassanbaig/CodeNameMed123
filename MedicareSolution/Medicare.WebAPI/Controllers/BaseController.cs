@@ -11,9 +11,9 @@ namespace Medicare.WebAPI.Controllers
 {    
     public class BaseController : ApiController
     {
-        public readonly EFContextProvider<MedicareDevEntities>
-            _contextProvider = new EFContextProvider<MedicareDevEntities>();
-        public MedicareDevEntities Context { get { return _contextProvider.Context; } }
+        public readonly EFContextProvider<shiner49_medicareEntities>
+            _contextProvider = new EFContextProvider<shiner49_medicareEntities>();
+        public shiner49_medicareEntities Context { get { return _contextProvider.Context; } }
         public string Metadata
         {
             get { return _contextProvider.Metadata(); }

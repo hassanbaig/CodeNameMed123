@@ -46,7 +46,7 @@
     <script src="App/Animation/angular-spinner.js"></script>
     <script type="text/javascript" src="Scripts/angular-animate.js"></script>
     <link href="Content/animations.css" rel="stylesheet">
-    <script type="text/javascript" src="App/Animation/alerts-manager.js"></script>   
+    <script type="text/javascript" src="App/Animation/alerts-manager.js"></script>
 
     <script type="text/javascript" src="App/CustomDirectives/filters.js"></script>
 
@@ -57,8 +57,7 @@
 
     <!--<script src="Content/Assets/JS/dialogs.min.js" type="text/javascript"></script>
     <script src="Content/Assets/JS/ui-bootstrap-tpls-0.6.0.js" type="text/javascript"></script>-->
-   
-     <!--<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js" type="text/javascript"></script>
+    <!--<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js" type="text/javascript"></script>
     <script src="http://m-e-conroy.github.io/angular-dialog-service/javascripts/dialogs.min.js" type="text/javascript"></script>-->
 
     <link href="Content/DialogCSS.css" rel="stylesheet" />
@@ -159,17 +158,17 @@
                 <div class="row" data-ng-controller="practicesController as practicesControllerVM">
                     <div class=" col-sm-3 col-lg-3 hidden-xs">
                         <ul class="nav nav-pills nav-stacked">
-                            <li class="active" id="practiceDetailsLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeDetails();">Practice Details</a></li>
-                            <li id="practiceLocationLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeLocation();">Location</a></li>
-                            <li id="practiceContactsLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeContants();">Contacts</a></li>
-                            <li id="practiceTimingsLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeTimings();">Timings</a></li>
-                            <li id="practiceServicesLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeServices();practicesControllerVM.getServices();practicesControllerVM.getAddedServices();practicesControllerVM.getTravelServices();practicesControllerVM.getAddedTravelServices();">Services</a></li>
-                            <li id="practicePicturesLI"><a href="#" data-ng-click="practicesControllerVM.showPracticePictures();">Pictures</a></li>
-                            <li id="practiceVideosLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeVideos();">Videos</a></li>
-                            <li id="practicePremisesLI"><a href="#" data-ng-click="practicesControllerVM.showPracticePremises();practicesControllerVM.getPremises();practicesControllerVM.getAddedPremises();">Premises</a></li>
-                            <li id="practiceLanguagesLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeLanguages();practicesControllerVM.getLanguages();practicesControllerVM.getAddedLanguages();">Languages</a></li>
-                            <li id="practiceAccreditationsLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeAccreditations();practicesControllerVM.getAccreditations();practicesControllerVM.getAddedAccreditations();">Accreditations</a></li>
-                            <li id="practiceInsurancesLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeInsurances();practicesControllerVM.getInsurances();practicesControllerVM.getAddedInsurances();">Insurances</a></li>
+                            <li class="active" id="practiceDetailsLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeDetails();practicesControllerVM.getPracticeBillingCurrency();practicesControllerVM.getProviderDetailsOnLoad(1);">Practice Details</a></li>
+                            <li id="practiceLocationLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeLocation();practicesControllerVM.getProviderDetailsOnLoad(2);">Location</a></li>
+                            <li id="practiceContactsLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeContants();practicesControllerVM.getProviderDetailsOnLoad(3);">Contacts</a></li>
+                            <li id="practiceTimingsLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeTimings();practicesControllerVM.getProviderDetailsOnLoad(4);">Timings</a></li>
+                            <li id="practiceServicesLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeServices();practicesControllerVM.getServices();practicesControllerVM.getAddedServices();practicesControllerVM.getTravelServices();practicesControllerVM.getAddedTravelServices();practicesControllerVM.getProviderDetailsOnLoad(5);">Services</a></li>
+                            <li id="practicePicturesLI"><a href="#" data-ng-click="practicesControllerVM.showPracticePictures();practicesControllerVM.getProviderDetailsOnLoad(6);">Pictures</a></li>
+                            <li id="practiceVideosLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeVideos();practicesControllerVM.getProviderDetailsOnLoad(7);">Videos</a></li>
+                            <li id="practicePremisesLI"><a href="#" data-ng-click="practicesControllerVM.showPracticePremises();practicesControllerVM.getPremises();practicesControllerVM.getAddedPremises();practicesControllerVM.getProviderDetailsOnLoad(8);">Premises</a></li>
+                            <li id="practiceLanguagesLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeLanguages();practicesControllerVM.getLanguages();practicesControllerVM.getAddedLanguages();practicesControllerVM.getProviderDetailsOnLoad(9);">Languages</a></li>
+                            <li id="practiceAccreditationsLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeAccreditations();practicesControllerVM.getAccreditations();practicesControllerVM.getAddedAccreditations();practicesControllerVM.getProviderDetailsOnLoad(10);">Accreditations</a></li>
+                            <li id="practiceInsurancesLI"><a href="#" data-ng-click="practicesControllerVM.showPracticeInsurances();practicesControllerVM.getInsurances();practicesControllerVM.getAddedInsurances();practicesControllerVM.getProviderDetailsOnLoad(11);">Insurances</a></li>
                         </ul>
                     </div>
                     <!--Visible on XS View-->
@@ -184,17 +183,17 @@
                                 </div>
                                 <div class="collapse navbar-collapse main-nav">
                                     <ul class="nav navbar-nav">
-                                        <li class="active" id="practiceDetailsLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeDetails();">Practice Details</a></li>
-                                        <li id="practiceLocationLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeLocation();">Location</a></li>
-                                        <li id="practiceContactsLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeContants();">Contacts</a></li>
-                                        <li id="practiceTimingsLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeTimings();">Timings</a></li>
-                                        <li id="practiceServicesLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeServices();practicesControllerVM.getServices();practicesControllerVM.getAddedServices();practicesControllerVM.getTravelServices();practicesControllerVM.getAddedTravelServices();">Services</a></li>
-                                        <li id="practicePicturesLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticePictures();">Pictures</a></li>
-                                        <li id="practiceVideosLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeVideos();">Videos</a></li>
-                                        <li id="practicePremisesLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticePremises();practicesControllerVM.getPremises();practicesControllerVM.getAddedPremises();">Premises</a></li>
-                                        <li id="practiceLanguagesLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeLanguages();practicesControllerVM.getLanguages();practicesControllerVM.getAddedLanguages();">Languages</a></li>
-                                        <li id="practiceAccreditationsLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeAccreditations();practicesControllerVM.getAccreditations();practicesControllerVM.getAddedAccreditations();">Accreditations</a></li>
-                                        <li id="practiceInsurancesLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeInsurances();practicesControllerVM.getInsurances();practicesControllerVM.getAddedInsurances();">Insurances</a></li>
+                                        <li class="active" id="practiceDetailsLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeDetails();practicesControllerVM.getPracticeBillingCurrency();practicesControllerVM.getProviderDetailsOnLoad(1);">Practice Details</a></li>
+                                        <li id="practiceLocationLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeLocation();practicesControllerVM.getProviderDetailsOnLoad(2);">Location</a></li>
+                                        <li id="practiceContactsLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeContants();practicesControllerVM.getProviderDetailsOnLoad(3);">Contacts</a></li>
+                                        <li id="practiceTimingsLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeTimings();practicesControllerVM.getProviderDetailsOnLoad(4);">Timings</a></li>
+                                        <li id="practiceServicesLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeServices();practicesControllerVM.getServices();practicesControllerVM.getAddedServices();practicesControllerVM.getTravelServices();practicesControllerVM.getAddedTravelServices();practicesControllerVM.getProviderDetailsOnLoad(5);">Services</a></li>
+                                        <li id="practicePicturesLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticePictures();practicesControllerVM.getProviderDetailsOnLoad(6);">Pictures</a></li>
+                                        <li id="practiceVideosLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeVideos();practicesControllerVM.getProviderDetailsOnLoad(7);">Videos</a></li>
+                                        <li id="practicePremisesLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticePremises();practicesControllerVM.getPremises();practicesControllerVM.getAddedPremises();practicesControllerVM.getProviderDetailsOnLoad(8);">Premises</a></li>
+                                        <li id="practiceLanguagesLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeLanguages();practicesControllerVM.getLanguages();practicesControllerVM.getAddedLanguages();practicesControllerVM.getProviderDetailsOnLoad(9);">Languages</a></li>
+                                        <li id="practiceAccreditationsLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeAccreditations();practicesControllerVM.getAccreditations();practicesControllerVM.getAddedAccreditations();practicesControllerVM.getProviderDetailsOnLoad(10);">Accreditations</a></li>
+                                        <li id="practiceInsurancesLI2"><a href="#" data-ng-click="practicesControllerVM.showPracticeInsurances();practicesControllerVM.getInsurances();practicesControllerVM.getAddedInsurances();practicesControllerVM.getProviderDetailsOnLoad(11);">Insurances</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -224,7 +223,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-8 col-xs-offset-1 ">
+                            <div class="col-xs-8 col-xs-offset-1 " data-ng-init="practicesControllerVM.getProviderDetailsOnLoad(1);">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Practice Name</label>
                                     <input id="textinput" name="textinput" placeholder="" class="form-control input-xs" type="text" data-ng-model="practicesControllerVM.practiceDetailsName">
@@ -238,14 +237,30 @@
                                 <label for="exampleInputEmail1">Practice Discription</label>
                                 <textarea class="form-control" rows="3" style="resize:none" data-ng-model="practicesControllerVM.practiceDetailsDescription"></textarea>
                                 <div class="form-group">
+
                                     <label for="exampleInputEmail1">Practice Billing Currency</label>
-                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceDetailsBillingCurrency">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="practicesControllerVM.practiceDetailsBillingCurrency" list="practiceBillingCurrencyDatalist" placeholder="Billing Currency">
+                                        <datalist id="practiceBillingCurrencyDatalist" spellcheck="true">
+                                            <option data-ng-repeat="billingCurrency in practicesControllerVM.billingCurrencyList track by $index" value="{{billingCurrency.name}}">
+</datalist>
+                                    </div>
+
+                                    <!--<input type="text" class="form-control" data-ng-model="practicesControllerVM.practiceDetailsBillingCurrency" list="practiceBillingCurrencyDatalist" placeholder="Currency">
+                                            <datalist id="practiceBillingCurrencyDatalist" spellcheck="true">
+                                                <option data-ng-repeat="billingcurrency in practicesControllerVM.billingCurrencyList" value="{{billingcurrency.name}}">
+                                            </datalist>-->
+                                    <!--<select class="form-control" data-ng-model="practicesControllerVM.practiceDetailsBillingCurrency">
                                         <option value="" selected disabled>Currency</option>
                                         <option>2</option>
                                         <option>3</option>
                                         <option>4</option>
                                         <option>5</option>
-                                    </select>
+                                    </select>-->
+
+
+
+
                                 </div>
 
                                 <div class="form-group">
@@ -287,7 +302,7 @@
                             </div>
                         </div>
                         <!--//////////////////////////////////////////////////////////////////////-->
-                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeLocation">
+                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeLocation" data-ng-init="practicesControllerVM.getProviderDetailsOnLoad(2);">
                             <span style="color:#F00;font-size:18px; font-weight:bold">PRACTICE LOCATION</span><hr>
 
                             <!--Row Form-->
@@ -354,7 +369,7 @@
                         </div>
 
                         <!--//////////////////////////////////////////////////////////////////////-->
-                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeContants">
+                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeContants" data-ng-init="practicesControllerVM.getProviderDetailsOnLoad(3);">
                             <span style="color:#F00;font-size:18px; font-weight:bold">PRACTICE CONTACTS</span><hr>
                             <!--Row Form-->
                             <div class="row">
@@ -441,491 +456,498 @@
                         </div>
                         <!--//////////////////////////////////////////////////////////////////////-->
 
-                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeTimings">
+                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeTimings" data-ng-init="practicesControllerVM.getProviderDetailsOnLoad(4);">
                             <span style="color:#F00;font-size:18px; font-weight:bold">PRACTICE TIMINGS</span><hr>
 
-                            <div class="col-xs-12 ">
-                                <div class="row" align="center">
-                                    <div class="col-xs-12">
-                                        <label> <input type="checkbox" data-ng-model="practicesControllerVM.practiceTimingsLunchBreak"> Add Lunch Break </label>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="col-xs-12 ">
+                                        <div class="row" align="center">
+                                            <div class="col-xs-12">
+                                                <label> <input type="checkbox" data-ng-model="practicesControllerVM.practiceTimingsLunchBreak"> Add Lunch Break </label>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive ">
+                                            <table class="table table-hover table-responsive">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            <!--<input class="no-margin" type="checkbox">-->Days
+                                                        </th>
+                                                        <th data-ng-show="practicesControllerVM.practiceTimingsMonday">In</th>
+                                                        <th data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">Out</th>
+                                                        <th data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">In</th>
+                                                        <th data-ng-show="practicesControllerVM.practiceTimingsMonday">Out</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td> <label> <input type="checkbox" data-ng-click=" practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsMonday"> Mon </label> </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsMonday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayOpenHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayOpenMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsMonday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayCloseHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayCloseMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsMonday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayOpenHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayOpenMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsMonday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayCloseHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayCloseMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> </td>
+                                                        <td style="font-size:11px;"><a href="" data-ng-click="practicesControllerVM.practiceTimingsCopyToAll();">Copy Timings To All days</a>  </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsTuesday"> Tue </label> </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsTuesday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayOpenHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayOpenMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsTuesday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayCloseHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayCloseMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsTuesday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayOpenHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayOpenMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsTuesday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayCloseHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayCloseMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsWednesday"> Wed </label> </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsWednesday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayOpenHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayOpenMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsWednesday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayCloseHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayCloseMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsWednesday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayOpenHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayOpenMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsWednesday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayCloseHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayCloseMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsThursday"> Thu </label> </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsThursday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayOpenHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayOpenMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsThursday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayCloseHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayCloseMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsThursday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayOpenHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayOpenMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsThursday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayCloseHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayCloseMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsFriday"> Fri </label> </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsFriday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayOpenHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayOpenMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsFriday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayCloseHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayCloseMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsFriday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayOpenHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayOpenMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsFriday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayCloseHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayCloseMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsSaturday"> Sat </label> </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSaturday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayOpenHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayOpenMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSaturday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayCloseHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayCloseMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSaturday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayOpenHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayOpenMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSaturday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayCloseHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayCloseMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsSunday"> Sun </label> </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSunday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayOpenHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayOpenMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSunday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayCloseHours1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayCloseMinutes1" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSunday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayOpenHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayOpenMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                        <td>
+                                                            <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSunday">
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayCloseHours2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="hours in hoursArray" value="{{hours}}">{{hours}}</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayCloseMinutes2" style="padding:0px; height:auto;">
+                                                                        <option data-ng-repeat="minutes in minutesArray" value="{{minutes}}">{{minutes}}</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-responsive " style="width:auto">
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <!--<input class="no-margin" type="checkbox">-->Days
-                                                </th>
-                                                <th data-ng-show="practicesControllerVM.practiceTimingsMonday">Open</th>
-                                                <th data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">Closed</th>
-                                                <th data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">Open</th>
-                                                <th data-ng-show="practicesControllerVM.practiceTimingsMonday">Closed</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsMonday"> Mon </label> </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsMonday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayOpenHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayOpenMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsMonday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayCloseHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayCloseMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsMonday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayOpenHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayOpenMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsMonday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayCloseHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsMondayCloseMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td> </td>
-                                                <td style="font-size:11px;"><a href="" data-ng-click="practicesControllerVM.practiceTimingsCopyToAll();">Copy Timings To All days</a>  </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsTuesday"> Tue </label> </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsTuesday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayOpenHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayOpenMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsTuesday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayCloseHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayCloseMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsTuesday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayOpenHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayOpenMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsTuesday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayCloseHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsTuesdayCloseMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsWednesday"> Wed </label> </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsWednesday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayOpenHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayOpenMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsWednesday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayCloseHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayCloseMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsWednesday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayOpenHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayOpenMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsWednesday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayCloseHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsWednesdayCloseMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsThursday"> Thu </label> </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsThursday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayOpenHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayOpenMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsThursday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayCloseHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayCloseMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsThursday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayOpenHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayOpenMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsThursday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayCloseHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsThursdayCloseMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsFriday"> Fri </label> </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsFriday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayOpenHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayOpenMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsFriday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayCloseHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayCloseMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsFriday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayOpenHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayOpenMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsFriday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayCloseHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsFridayCloseMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsSaturday"> Sat </label> </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSaturday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayOpenHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayOpenMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSaturday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayCloseHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayCloseMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSaturday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayOpenHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayOpenMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSaturday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayCloseHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSaturdayCloseMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td> <label> <input type="checkbox" data-ng-click="practicesControllerVM.practiceTimingsClose1Open2Visibility();" data-ng-model="practicesControllerVM.practiceTimingsSunday"> Sun </label> </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSunday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayOpenHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayOpenMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSunday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayCloseHours1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayCloseMinutes1" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td data-ng-show="practicesControllerVM.practiceTimingsLunchBreak">
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSunday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayOpenHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayOpenMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                                <td>
-                                                    <form class="form-inline" role="form" data-ng-show="practicesControllerVM.practiceTimingsSunday">
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayCloseHours2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="hours in hoursArray track by $index" value="{{hours}}">{{hours}}</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <select class="form-control" data-ng-model="practicesControllerVM.practiceTimingsSundayCloseMinutes2" style="padding:0px; height:auto;">
-                                                                <option data-ng-repeat="minutes in minutesArray track by $index" value="{{minutes}}">{{minutes}}</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
                             </div>
+
+
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="col-xs-4">
                                         <hr>
-                                        <button type="button" class="btn btn-primary" data-ng-click="practicesControllerVM.addPracticeTimings();">Save</button>
+                                        <button type="button" class="btn btn-primary" data-ng-click="practicesControllerVM.getProviderDetailsOnLoad(15);practicesControllerVM.getProviderDetailsOnLoad(4);">Save</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- End Row 2 -->
                         </div>
                         <!--//////////////////////////////////////////////////////////////////////-->
-                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeServices">
+                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeServices" data-ng-init="practicesControllerVM.getProviderDetailsOnLoad(5);">
                             <span style="color:#F00;font-size:18px; font-weight:bold">PRACTICE SERVICES</span><hr>
 
                             <!--Row Form-->
@@ -1004,7 +1026,7 @@
 
                                                     <datalist id="practiceTravelServicesDatalist" spellcheck="true">
                                                         <option data-ng-repeat="travelService in practicesControllerVM.travelServicesList track by $index" value="{{travelService.title}}">
-</datalist>
+                                                    </datalist>
                                                 </td>
                                                 <td>
                                                     <span class="glyphicon glyphicon-plus-sign" data-ng-click="practicesControllerVM.addPracticeTravelServices();" style="float:right; color:green; padding-left:10px;"></span>
@@ -1043,7 +1065,7 @@
                         </div>
                         <!--//////////////////////////////////////////////////////////////////////-->
 
-                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticePictures">
+                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticePictures" data-ng-init="practicesControllerVM.getProviderDetailsOnLoad(6);">
                             <span style="color:#F00;font-size:18px; font-weight:bold">PRACTICE PICTURES (MAX FILE SIZE: 2MB, MAX NO OF PICTURES: 15)</span><hr>
 
                             <!--Row Form-->
@@ -1166,7 +1188,7 @@
 
                                             <div class="row" style="margin-top:15px;">
                                                 <div class="col-xs-5">
-                                                    <div class="form-group">B
+                                                    <div class="form-group">
 
                                                         <select class="form-control">
                                                             <option>Tags</option>
@@ -1199,7 +1221,7 @@
                         </div>
 
                         <!--//////////////////////////////////////////////////////////////////////-->
-                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeVideos">
+                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeVideos" data-ng-init="practicesControllerVM.getProviderDetailsOnLoad(7);">
                             <span style="color:#F00;font-size:18px; font-weight:bold">PRACTICE VIDEOS (MAX NO OF VIDEOS: 4)</span><hr>
 
                             <!--Row Form-->
@@ -1295,7 +1317,7 @@
                             </div>
                         </div>
                         <!--//////////////////////////////////////////////////////////////////////-->
-                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticePremises">
+                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticePremises" data-ng-init="practicesControllerVM.getProviderDetailsOnLoad(8);">
                             <span style="color:#F00;font-size:18px; font-weight:bold">PRACTICE EDIT PREMISES</span><hr>
 
                             <!--Row Form-->
@@ -1311,10 +1333,10 @@
                                                 </td>
                                                 <td></td>
                                             </tr>
-                                           
+
                                             <tr>
-                                            <td>
-                                                <input type="text" class="form-control" data-ng-model="practicesControllerVM.practicePremisesPremisName" list="practicePremisesDatalist" placeholder="Premises">
+                                                <td>
+                                                    <input type="text" class="form-control" data-ng-model="practicesControllerVM.practicePremisesPremisName" list="practicePremisesDatalist" placeholder="Premises">
 
                                                     <datalist id="practicePremisesDatalist" spellcheck="true">
                                                         <option data-ng-repeat="premis in practicesControllerVM.premisesList" value="{{premis.name}}">
@@ -1365,8 +1387,8 @@
 
 
                         </div>
-                        <!--//////////////////////////////////////////////////////////////////////-->                                             
-                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeLanguages">
+                        <!--//////////////////////////////////////////////////////////////////////-->
+                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeLanguages" data-ng-init="practicesControllerVM.getProviderDetailsOnLoad(9);">
                             <span style="color:#F00;font-size:18px; font-weight:bold">PRACTICE LANGUAGES</span>
                             <hr>
                             <div class="row">
@@ -1379,8 +1401,8 @@
                                                 </td>
                                                 <td></td>
                                             </tr>
-                                            
-                                                                                  
+
+
                                             <tr>
                                                 <td>
                                                     <input type="text" class="form-control" data-ng-model="practicesControllerVM.practiceLanguagesLanguageName" list="practiceLanguagesDatalist" placeholder="Languages">
@@ -1408,12 +1430,12 @@
                                                     <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" data-ng-model="practicesControllerVM.PracticeDoctorLanguagesAddedLanguageName">
                                                 </div>
                                             </li>
-                                            <li class="list-group-item" data-ng-repeat="language in practicesControllerVM.addedLanguagesList | limitTo:practicesControllerVM.addedLanguagesListCount | filter:practicesControllerVM.PracticeDoctorLanguagesAddedLanguageName">{{language.name}}
-<!--<span data-ng-click="staffControllerVM.removeDoctorLanguages(language.languageId);" class="glyphicon glyphicon-minus-sign pull-right" style="color: #F00"></span></li>-->
-
-
+                                            <li class="list-group-item" data-ng-repeat="language in practicesControllerVM.addedLanguagesList | limitTo:practicesControllerVM.addedLanguagesListCount | filter:practicesControllerVM.PracticeDoctorLanguagesAddedLanguageName">
+                                                {{language.name}}
+                                                <!--<span data-ng-click="staffControllerVM.removeDoctorLanguages(language.languageId);" class="glyphicon glyphicon-minus-sign pull-right" style="color: #F00"></span></li>-->
                                                 <!--<button class="btn btn-success" data-ng-click="launch('confirm')">Confirm Dialog</button>-->
-                                                <span data-ng-click="practicesControllerVM.removePracticeLanguages(language.languageId);" class="glyphicon glyphicon-minus-sign pull-right" style="color: #F00"></span></li>
+                                                <span data-ng-click="practicesControllerVM.removePracticeLanguages(language.languageId);" class="glyphicon glyphicon-minus-sign pull-right" style="color: #F00"></span>
+                                            </li>
                                             <li class="list-group-item" style="text-align:center;color:#F00; font-weight:bold"><a href="" data-ng-click="practicesControllerVM.loadMoreLanguages();"><span class="glyphicon glyphicon-plus-sign">  </span> Load More</a> </li>
 
 
@@ -1437,7 +1459,7 @@
 
 
 
-                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeAccreditations">
+                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeAccreditations" data-ng-init="practicesControllerVM.getProviderDetailsOnLoad(10);">
                             <span style="color:#F00;font-size:18px; font-weight:bold">PRACTICE ACCREDITATIONS</span><hr>
 
                             <!--Row Form-->
@@ -1456,7 +1478,7 @@
                                                     <input type="text" class="form-control" data-ng-model="practicesControllerVM.practiceAccreditationsAccreditationName" list="practiceAccreditationsDatalist" placeholder="Accreditations">
                                                     <datalist id="practiceAccreditationsDatalist" spellcheck="true">
                                                         <option data-ng-repeat="accreditation in practicesControllerVM.accreditationsList track by $index" value="{{accreditation.title}}">
-</datalist>
+                                                    </datalist>
                                                 </td>
                                                 <td>
                                                     <span class="glyphicon glyphicon-plus-sign" data-ng-click="practicesControllerVM.addPracticeAccreditations();" style="float:right; color:green; padding-left:10px;"></span>
@@ -1498,7 +1520,7 @@
 
                         </div>
                         <!--//////////////////////////////////////////////////////////////////////-->
-                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeInsurances">
+                        <div class="col-sm-9 col-lg-9 sample-show-hide" data-ng-show="practicesControllerVM.isVisiblePracticeInsurances" data-ng-init="practicesControllerVM.getProviderDetailsOnLoad(11);">
                             <span style="color:#F00;font-size:18px; font-weight:bold">PRACTICE INSURANCES</span><hr>
 
                             <!--Row Form-->
@@ -1519,7 +1541,7 @@
                                                     <input type="text" class="form-control" data-ng-model="practicesControllerVM.practiceInsurancesInsuranceName" list="practiceInsurancesDatalist" placeholder="Insurances">
                                                     <datalist id="practiceInsurancesDatalist" spellcheck="true">
                                                         <option data-ng-repeat="insurance in practicesControllerVM.insurancesList track by $index" value="{{insurance.title}}">
-</datalist>
+                                                    </datalist>
                                                 </td>
                                                 <td>
                                                     <span class="glyphicon glyphicon-plus-sign" data-ng-click="practicesControllerVM.addPracticeInsurances();" style="float:right; color:green; padding-left:10px;"></span>
@@ -1580,16 +1602,5 @@
         });
 
     </script>
-
-    <!-- <script src="js/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
-            <script type="text/javascript">
-                $(function() {
-                    // Replace the <textarea id="editor1"> with a CKEditor
-                    // instance, using default configuration.
-                    CKEDITOR.replace('editor1');
-                    //bootstrap WYSIHTML5 - text editor
-                    $(".textarea").wysihtml5();
-                });
-            </script>-->
 </body>
 </html>

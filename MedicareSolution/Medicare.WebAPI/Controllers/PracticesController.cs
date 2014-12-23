@@ -31,6 +31,31 @@ namespace Medicare.WebAPI.Controllers
             return base.Metadata;
         }
 
+
+        //Practice Detail
+
+        [HttpGet]
+        public PracticeEditDetails GetPracticeDetails(long? providerId)
+        {
+            FactoryFacade factory = new FactoryFacade();
+            string data = TicketHelper.GetDecryptedUserId();
+            PracticeEditDetails practiceEditDetails = null;
+
+            if (data != null)
+            {
+                string[] dataList = data.Split(',');
+
+                domainModel = factory.DomainModelFactory.CreateDomainModel(typeof(PracticeEditDetails));
+                if (providerId == 0)
+                { domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]),22, 1)); }
+                else
+                { domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], (long)providerId,22, 1)); }
+                domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
+                practiceEditDetails = ((DomainModel.Models.PracticeEditDetails)domainService.Query(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_GET_DETAILS)).PracticeInfo;
+            }
+            return practiceEditDetails;
+        }        
+        
         [HttpGet]
         public IHttpActionResult AddPracticeDetails(string uploadLogo, string name, string tagLine, string description, int billingCurrency, long type)
         {
@@ -49,6 +74,25 @@ namespace Medicare.WebAPI.Controllers
             return Ok(practiceEditDetails.ResponseMessage);
         }
 
+         //Currency
+        [HttpGet]
+        public IQueryable GetPracticeBillingCurrency()
+        {
+            FactoryFacade factory = new FactoryFacade();
+            domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
+            return ((DomainModel.Models.PracticeEditDetails)domainService.Query(Medicare.Core.Enumerations.SearchCriteriaEnum.GET_BILLING_CURRENCY)).BillingCurrency.AsQueryable();
+        }
+
+        //PracticeType
+    [HttpGet]
+        public IQueryable GetPracticeType()
+        {
+            FactoryFacade factory = new FactoryFacade();
+            domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
+            return ((DomainModel.Models.PracticeEditDetails)domainService.Query(Medicare.Core.Enumerations.SearchCriteriaEnum.GET_PRACTICE_TYPE)).PracticeType.AsQueryable();
+        }
+
+        //PracticeCountries
         [HttpGet]
         public IQueryable GetCountries()
         {
@@ -56,6 +100,32 @@ namespace Medicare.WebAPI.Controllers
             domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
             return ((DomainModel.Models.PracticeEditDetails)domainService.Query(Medicare.Core.Enumerations.SearchCriteriaEnum.GET_COUNTRIES)).Countries.AsQueryable();
         }
+
+        //Contacts
+        [HttpGet]
+        public PracticeEditDetails GetPracticeContacts(long? providerId,long? practiceId)
+        {
+            FactoryFacade factory = new FactoryFacade();
+            string data = TicketHelper.GetDecryptedUserId();
+            PracticeEditDetails practiceEditDetails = null;
+
+            if (data != null)
+            {
+                string[] dataList = data.Split(',');
+
+                domainModel = factory.DomainModelFactory.CreateDomainModel(typeof(PracticeEditDetails));
+                if (providerId == 0)
+                { domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]),6, 2)); }
+                else
+                { domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], (long)providerId, (long)practiceId, 2)); }
+                domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
+                practiceEditDetails = ((DomainModel.Models.PracticeEditDetails)domainService.Query(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_GET_CONTACTS)).PracticeInfo;
+
+                   }
+            return practiceEditDetails;
+        }    
+
+
 
         [HttpGet]
         public IHttpActionResult AddPracticeLocation(string streetAddress, string landmark, string locality, string city, string state, string zipcode, int countryId)
@@ -75,97 +145,12 @@ namespace Medicare.WebAPI.Controllers
             return Ok(response);
         }
 
-        //[HttpGet]
-        //public IHttpActionResult AddPracticeTimings(bool monday, string monOpenHour1, string monOpenMinute1, string monCloseHours1, string monCloseMinutes1,
-        //                                                string monOpenHour2, string monOpenMinute2, string monCloseHours2, string monCloseMinutes2,
-        //                                                    bool tuesday, string tueOpenHour1, string tueOpenMinute1, string tueCloseHours1, string tueCloseMinutes1,
-        //                                                        string tueOpenHour2, string tueOpenMinute2, string tueCloseHours2, string tueCloseMinutes2,
-        //                                                            bool wednesday, string wedOpenHour1, string wedOpenMinute1, string wedCloseHours1, string wedCloseMinutes1,
-        //                                                                string wedOpenHour2, string wedOpenMinute2, string wedCloseHours2, string wedCloseMinutes2,
-        //                                                                    bool thursday, string thuOpenHour1, string thuOpenMinute1, string thuCloseHours1, string thuCloseMinutes1,
-        //                                                                        string thuOpenHour2, string thuOpenMinute2, string thuCloseHours2, string thuCloseMinutes2,
-        //                                                                            bool friday, string friOpenHour1, string friOpenMinute1, string friCloseHours1, string friCloseMinutes1,
-        //                                                                                string friOpenHour2, string friOpenMinute2, string friCloseHours2, string friCloseMinutes2,
-        //                                                                                    bool saturday, string satOpenHour1, string satOpenMinute1, string satCloseHours1, string satCloseMinutes1,
-        //                                                                                        string satOpenHour2, string satOpenMinute2, string satCloseHours2, string satCloseMinutes2,
-        //                                                                                            bool sunday, string sunOpenHour1, string sunOpenMinute1, string sunCloseHours1, string sunCloseMinutes1,
-        //                                                                                                string sunOpenHour2, string sunOpenMinute2, string sunCloseHours2, string sunCloseMinutes2)
-        //{
-        //    string response = string.Empty;
-        //    response = "Timings added successfully";
-        //    return Ok(response);
-        //}
-
-       //Time \ Consultation
-
-        //[HttpGet]
-        //public IHttpActionResult AddDoctorConsultation(int consultationFee, int consultationDuration, long providerId, bool monday = true, string monOpenHour1 = "", string monOpenMinute1 = "", string monCloseHours1 = "", string monCloseMinutes1 = "",
-        //                                                string monOpenHour2 = "", string monOpenMinute2 = "", string monCloseHours2 = "", string monCloseMinutes2 = "",
-        //                                                    bool tuesday = true, string tueOpenHour1 = "", string tueOpenMinute1 = "", string tueCloseHours1 = "", string tueCloseMinutes1 = "",
-        //                                                        string tueOpenHour2 = "", string tueOpenMinute2 = "", string tueCloseHours2 = "", string tueCloseMinutes2 = "",
-        //                                                            bool wednesday = true, string wedOpenHour1 = "", string wedOpenMinute1 = "", string wedCloseHours1 = "", string wedCloseMinutes1 = "",
-        //                                                                string wedOpenHour2 = "", string wedOpenMinute2 = "", string wedCloseHours2 = "", string wedCloseMinutes2 = "",
-        //                                                                    bool thursday = true, string thuOpenHour1 = "", string thuOpenMinute1 = "", string thuCloseHours1 = "", string thuCloseMinutes1 = "",
-        //                                                                        string thuOpenHour2 = "", string thuOpenMinute2 = "", string thuCloseHours2 = "", string thuCloseMinutes2 = "",
-        //                                                                            bool friday = true, string friOpenHour1 = "", string friOpenMinute1 = "", string friCloseHours1 = "", string friCloseMinutes1 = "",
-        //                                                                                string friOpenHour2 = "", string friOpenMinute2 = "", string friCloseHours2 = "", string friCloseMinutes2 = "",
-        //                                                                                    bool saturday = true, string satOpenHour1 = "", string satOpenMinute1 = "", string satCloseHours1 = "", string satCloseMinutes1 = "",
-        //                                                                                        string satOpenHour2 = "", string satOpenMinute2 = "", string satCloseHours2 = "", string satCloseMinutes2 = "",
-        //                                                                                            bool sunday = true, string sunOpenHour1 = "", string sunOpenMinute1 = "", string sunCloseHours1 = "", string sunCloseMinutes1 = "",
-        //                                                                                                string sunOpenHour2 = "", string sunOpenMinute2 = "", string sunCloseHours2 = "", string sunCloseMinutes2 = "")
-        //{
-        //    DoctorEditDetails doctorEditDetails = null;
-        //    string data = TicketHelper.GetDecryptedUserId();
-        //    string[] dataList = data.Split(',');
-
-        //    FactoryFacade factory = new FactoryFacade();
-        //    domainModel = factory.DomainModelFactory.CreateDomainModel(typeof(DoctorEditDetails));
-        //    if (providerId == 0)
-        //    {
-        //        domainModel.Fill(HashHelper.DoctorEditDetailsAddDoctorConsultation(3, dataList[0], Convert.ToInt64(dataList[1]), consultationFee, consultationDuration,
-        //                                                monday, monOpenHour1, monOpenMinute1, monCloseHours1, monCloseMinutes1,
-        //                                                    monOpenHour2, monOpenMinute2, monCloseHours2, monCloseMinutes2,
-        //                                                        tuesday, tueOpenHour1, tueOpenMinute1, tueCloseHours1, tueCloseMinutes1,
-        //                                                            tueOpenHour2, tueOpenMinute2, tueCloseHours2, tueCloseMinutes2,
-        //                                                                wednesday, wedOpenHour1, wedOpenMinute1, wedCloseHours1, wedCloseMinutes1,
-        //                                                                    wedOpenHour2, wedOpenMinute2, wedCloseHours2, wedCloseMinutes2,
-        //                                                                        thursday, thuOpenHour1, thuOpenMinute1, thuCloseHours1, thuCloseMinutes1,
-        //                                                                            thuOpenHour2, thuOpenMinute2, thuCloseHours2, thuCloseMinutes2,
-        //                                                                                friday, friOpenHour1, friOpenMinute1, friCloseHours1, friCloseMinutes1,
-        //                                                                                    friOpenHour2, friOpenMinute2, friCloseHours2, friCloseMinutes2,
-        //                                                                                        saturday, satOpenHour1, satOpenMinute1, satCloseHours1, satCloseMinutes1,
-        //                                                                                            satOpenHour2, satOpenMinute2, satCloseHours2, satCloseMinutes2,
-        //                                                                                                sunday, sunOpenHour1, sunOpenMinute1, sunCloseHours1, sunCloseMinutes1,
-        //                                                                                                    sunOpenHour2, sunOpenMinute2, sunCloseHours2, sunCloseMinutes2));
-        //    }
-        //    else
-        //    {
-        //        domainModel.Fill(HashHelper.DoctorEditDetailsAddDoctorConsultation(3, dataList[0], (long)providerId, consultationFee, consultationDuration,
-        //                                                monday, monOpenHour1, monOpenMinute1, monCloseHours1, monCloseMinutes1,
-        //                                                    monOpenHour2, monOpenMinute2, monCloseHours2, monCloseMinutes2,
-        //                                                        tuesday, tueOpenHour1, tueOpenMinute1, tueCloseHours1, tueCloseMinutes1,
-        //                                                            tueOpenHour2, tueOpenMinute2, tueCloseHours2, tueCloseMinutes2,
-        //                                                                wednesday, wedOpenHour1, wedOpenMinute1, wedCloseHours1, wedCloseMinutes1,
-        //                                                                    wedOpenHour2, wedOpenMinute2, wedCloseHours2, wedCloseMinutes2,
-        //                                                                        thursday, thuOpenHour1, thuOpenMinute1, thuCloseHours1, thuCloseMinutes1,
-        //                                                                            thuOpenHour2, thuOpenMinute2, thuCloseHours2, thuCloseMinutes2,
-        //                                                                                friday, friOpenHour1, friOpenMinute1, friCloseHours1, friCloseMinutes1,
-        //                                                                                    friOpenHour2, friOpenMinute2, friCloseHours2, friCloseMinutes2,
-        //                                                                                        saturday, satOpenHour1, satOpenMinute1, satCloseHours1, satCloseMinutes1,
-        //                                                                                            satOpenHour2, satOpenMinute2, satCloseHours2, satCloseMinutes2,
-        //                                                                                                sunday, sunOpenHour1, sunOpenMinute1, sunCloseHours1, sunCloseMinutes1,
-        //                                                                                                    sunOpenHour2, sunOpenMinute2, sunCloseHours2, sunCloseMinutes2));
-        //    }
-        //    domainService = factory.DomainServiceFactory.CreateDomainService(typeof(StaffDomainService));
-        //    doctorEditDetails = (DoctorEditDetails)domainService.Update(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.DOCTOR_EDIT_DETAILS_ADD_CONSULTATION);
-        //    return Ok(doctorEditDetails.ResponseMessage);
-        //}
-
-              
+                      
+   
         //Timing
 
         [HttpGet]
-        public IHttpActionResult AddPracticeTimeings(long providerId, bool monday = true, string monOpenHour1 = "", string monOpenMinute1 = "", string monCloseHours1 = "", string monCloseMinutes1 = "",
+        public IHttpActionResult AddPracticeTimings(long providerId, bool monday = true, string monOpenHour1 = "", string monOpenMinute1 = "", string monCloseHours1 = "", string monCloseMinutes1 = "",
                                                         string monOpenHour2 = "", string monOpenMinute2 = "", string monCloseHours2 = "", string monCloseMinutes2 = "",
                                                             bool tuesday = true, string tueOpenHour1 = "", string tueOpenMinute1 = "", string tueCloseHours1 = "", string tueCloseMinutes1 = "",
                                                                 string tueOpenHour2 = "", string tueOpenMinute2 = "", string tueCloseHours2 = "", string tueCloseMinutes2 = "",
@@ -222,15 +207,31 @@ namespace Medicare.WebAPI.Controllers
                                                                                                         sunday, sunOpenHour1, sunOpenMinute1, sunCloseHours1, sunCloseMinutes1,
                                                                                                             sunOpenHour2, sunOpenMinute2, sunCloseHours2, sunCloseMinutes2));
             }
-            domainService = factory.DomainServiceFactory.CreateDomainService(typeof(StaffDomainService));
-            practiceEditDetails = (PracticeEditDetails)domainService.Update(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_ADD_TIMINGS);
+            domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
+            practiceEditDetails = (PracticeEditDetails)domainService.Update(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_ADD_TO_TIMINGS);
             return Ok(practiceEditDetails.ResponseMessage);
         }
 
-      
+       [HttpGet]
+        public PracticeEditDetails GetPracticeTimings(long? providerId)
+        {
+            FactoryFacade factory = new FactoryFacade();
+            string data = TicketHelper.GetDecryptedUserId();
+            PracticeEditDetails practiceEditDetails = null;
+             if (data != null)
+            {
+                string[] dataList = data.Split(',');
 
-
-
+                domainModel = factory.DomainModelFactory.CreateDomainModel(typeof(PracticeEditDetails));
+                if (providerId == 0)
+                { domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]),6, 3)); }
+                else
+                { domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], (long)providerId,6, 3)); }
+                domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
+                practiceEditDetails = ((DomainModel.Models.PracticeEditDetails)domainService.Query(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_GET_ADDED_TIMINGS)).PracticeInfo;
+            }
+             return practiceEditDetails;
+        }     
 
         //Services Methods
         [HttpGet]
@@ -251,7 +252,7 @@ namespace Medicare.WebAPI.Controllers
                 string[] dataList = data.Split(',');
 
                 domainModel = factory.DomainModelFactory.CreateDomainModel(typeof(PracticeEditDetails));
-                domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]), 9));
+                domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]),6, 9));
                 domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
                 return ((DomainModel.Models.PracticeEditDetails)domainService.Query(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_GET_ADDED_SERVICES)).AddedServices.AsQueryable();
             }
@@ -343,7 +344,7 @@ namespace Medicare.WebAPI.Controllers
                 string[] dataList = data.Split(',');
 
                 domainModel = factory.DomainModelFactory.CreateDomainModel(typeof(PracticeEditDetails));
-                domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]), 10));
+                domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]),6, 10));
                 domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
                 return ((DomainModel.Models.PracticeEditDetails)domainService.Query(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_GET_ADDED_TRAVEL_SERVICES)).AddedTravelServices.AsQueryable();
             }
@@ -432,7 +433,7 @@ namespace Medicare.WebAPI.Controllers
                 string[] dataList = data.Split(',');
 
                 domainModel = factory.DomainModelFactory.CreateDomainModel(typeof(PracticeEditDetails));
-                domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]), 6));
+                domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]),6, 6));
                 domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
                 return ((DomainModel.Models.PracticeEditDetails)domainService.Query(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_GET_ADDED_PREMISES)).AddedPremises.AsQueryable();
             }
@@ -520,7 +521,7 @@ namespace Medicare.WebAPI.Controllers
                 string[] dataList = data.Split(',');
 
                 domainModel = factory.DomainModelFactory.CreateDomainModel(typeof(PracticeEditDetails));
-                domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]), 5));
+                domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]),6, 5));
                 domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
                 return ((DomainModel.Models.PracticeEditDetails)domainService.Query(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_GET_ADDED_LANGUAGES)).AddedLanguages.AsQueryable();
             }
@@ -609,7 +610,7 @@ namespace Medicare.WebAPI.Controllers
                 string[] dataList = data.Split(',');
 
                 domainModel = factory.DomainModelFactory.CreateDomainModel(typeof(PracticeEditDetails));
-                domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]), 7));
+                domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]),6, 7));
                 domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
                 return ((DomainModel.Models.PracticeEditDetails)domainService.Query(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_GET_ADDED_ACCREDITATIONS)).AddedAccreditations.AsQueryable();
             }
@@ -698,7 +699,7 @@ namespace Medicare.WebAPI.Controllers
                 string[] dataList = data.Split(',');
 
                 domainModel = factory.DomainModelFactory.CreateDomainModel(typeof(PracticeEditDetails));
-                domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]), 8));
+                domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]),6, 8));
                 domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
                 return ((DomainModel.Models.PracticeEditDetails)domainService.Query(domainModel, Medicare.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_GET_ADDED_INSURANCES)).AddedInsurances.AsQueryable();
             }

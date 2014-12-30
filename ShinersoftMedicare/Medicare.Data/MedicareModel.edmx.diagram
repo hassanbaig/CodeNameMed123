@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4127d5a7e81f41ffbe238246b3e7ebad" Name="Diagram1">
+        <EntityTypeShape EntityType="shiner49_medicareModel.Accreditation" Width="1.5" PointX="17.25" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Affiliation" Width="1.5" PointX="17.25" PointY="87.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Appointment" Width="1.5" PointX="16.5" PointY="78.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Award" Width="1.5" PointX="17.25" PointY="64.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.BillingCurrency" Width="1.5" PointX="18" PointY="97.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.City" Width="1.5" PointX="6" PointY="102.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.College" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Country" Width="1.5" PointX="3.75" PointY="102.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Degree" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.FavoriteProvider" Width="1.5" PointX="16.5" PointY="75.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Gender" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileAllergy" Width="1.5" PointX="5.25" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileBloodGlucose" Width="1.5" PointX="5.25" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileBloodPressure" Width="1.5" PointX="5.25" PointY="55.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileCholestrol" Width="1.5" PointX="5.25" PointY="58.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileDiet" Width="1.5" PointX="5.25" PointY="62.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileExercise" Width="1.5" PointX="5.25" PointY="66.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileFamilyHistory" Width="1.5" PointX="5.25" PointY="70.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileHeight" Width="1.5" PointX="5.25" PointY="74.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileImmunization" Width="1.5" PointX="5.25" PointY="78" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileLabTest" Width="1.5" PointX="5.25" PointY="81.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileMedicalCondition" Width="1.5" PointX="5.25" PointY="85.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileMedicalDocument" Width="1.5" PointX="5.25" PointY="89.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileMedication" Width="1.5" PointX="5.25" PointY="92.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileProcedure" Width="1.5" PointX="5.25" PointY="95.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.HealthProfileWeight" Width="1.5" PointX="5.25" PointY="99.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Insurance" Width="1.5" PointX="17.25" PointY="93.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Language" Width="1.5" PointX="20.25" PointY="93.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Locality" Width="1.5" PointX="20.25" PointY="65.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Patient" Width="1.5" PointX="8.25" PointY="77.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.PatientHealthTopic" Width="1.5" PointX="10.5" PointY="86.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.PatientQuery" Width="1.5" PointX="16.5" PointY="82.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.PatientQueryFollowUp" Width="1.5" PointX="18.75" PointY="90.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.PatientQueryPayment" Width="1.5" PointX="16.5" PointY="70.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.PatientQueryProvider" Width="1.5" PointX="24.75" PointY="80.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Practice" Width="1.5" PointX="20.25" PointY="96.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.PracticeType" Width="1.5" PointX="18" PointY="100.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Premis" Width="1.5" PointX="17.25" PointY="67.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Provider" Width="1.5" PointX="11.25" PointY="74" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderAccreditation" Width="1.5" PointX="19.5" PointY="75.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderAffiliation" Width="1.5" PointX="19.5" PointY="81.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderAvailability" Width="1.5" PointX="13.5" PointY="74.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderAward" Width="1.5" PointX="19.5" PointY="72.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderContact" Width="1.5" PointX="13.5" PointY="80.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderEducation" Width="1.5" PointX="13.5" PointY="84.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderExperience" Width="1.5" PointX="13.5" PointY="87.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderFee" Width="1.5" PointX="13.5" PointY="90.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderInsurance" Width="1.5" PointX="19.5" PointY="84.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderLanguage" Width="1.5" PointX="22.5" PointY="78.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderLocality" Width="1.5" PointX="22.5" PointY="75.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderPhoto" Width="1.5" PointX="13.5" PointY="101.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderPractice" Width="1.5" PointX="22.5" PointY="81.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderPremis" Width="1.5" PointX="19.5" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderReview" Width="1.5" PointX="19.5" PointY="78.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderService" Width="1.5" PointX="19.5" PointY="87.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderSpecialty" Width="1.5" PointX="22.5" PointY="72.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderTiming" Width="1.5" PointX="22.5" PointY="98.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderTreatment" Width="1.5" PointX="22.5" PointY="84.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderType" Width="1.5" PointX="9" PointY="74.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ProviderVideo" Width="1.5" PointX="13.5" PointY="118.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.RegistrationCouncil" Width="1.5" PointX="9" PointY="83.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.SecurityQuestion" Width="1.5" PointX="0.75" PointY="78.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Service" Width="1.5" PointX="17.25" PointY="105.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.ServiceType" Width="1.5" PointX="15" PointY="105.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Specialty" Width="1.5" PointX="14.25" PointY="93.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.State" Width="1.5" PointX="14.25" PointY="68.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.Treatment" Width="1.5" PointX="20.25" PointY="104.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.User" Width="1.5" PointX="3" PointY="76" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.UserFeedback" Width="1.5" PointX="5.25" PointY="130.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.UserFollowDoctor" Width="1.5" PointX="22.5" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.UserFollowPatient" Width="1.5" PointX="13.5" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.UserLoginAudit" Width="1.5" PointX="5.25" PointY="133.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.UserPrefrence" Width="1.5" PointX="5.25" PointY="136.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shiner49_medicareModel.UserRole" Width="1.5" PointX="0.75" PointY="75.875" IsExpanded="true" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderAccreditation_Accreditation" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderAccreditation_Accreditation1" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderAffiliation_Affiliation" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Appointment_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Appointment_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderAward_Award" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Practice_BillingCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_City_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Locality_City" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Patient_City" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_PatientQueryPayment_City" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Practice_City" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Locality_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Patient_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_PatientQueryPayment_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Practice_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_State_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_FavoriteProvider_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_FavoriteProvider_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddAllergy_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddBloodGlucose_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddBloodPressure_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddCholestrol_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddDiet_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddExercise_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddFamilyHistory_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddHeight_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddImmunization_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddLabTest_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddMedicalCondition_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddMedicalDocument_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddMedication_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddProcedure_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_AddWeight_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderInsurance_Insurance" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderLanguage_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Practice_Locality" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderLocality_Locality" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Patient_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_PatientHealthTopics_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_PatientQuery_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_PatientQueryPayment_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderReview_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_UserFollowPatients_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_PatientQuery_Specialty" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_PatientQueryFollowUp_PatientQuery" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_PatientQueryProvider_PatientQuery" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_PatientQueryPayment_State" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_PatientQueryProvider_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Practice_PracticeType" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Practice_State" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderPractice_Practice" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderTimings_Practice" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderPremises_Premises" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Provider_ProviderType" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Provider_RegistrationCouncil" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Provider_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderAccreditation_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderAffiliation_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderAvailability_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderAward_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderContacts_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderEducation_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderExperience_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderFee_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderInsurance_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderLanguage_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderLocality_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderPhoto_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderPractice_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderPremises_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderReview_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderService_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderSpecialty_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderTreatment_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderVideo_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_UserFollowDoctors_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderSpecialty_Specialty" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_ProviderTreatment_Treatment" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_User_SecurityQuestion" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_Service_ServiceType" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_User_UserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_UserFeedback_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_UserFollowDoctors_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_UserFollowPatients_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_UserLoginAudit_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shiner49_medicareModel.FK_UserPrefrences_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

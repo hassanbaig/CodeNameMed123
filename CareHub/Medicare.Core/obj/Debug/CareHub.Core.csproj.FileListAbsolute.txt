@@ -1,0 +1,9 @@
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.Core\bin\Debug\Medicare.Core.dll
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.Core\bin\Debug\Medicare.Core.pdb
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.Core\obj\Debug\CareHub.Core.csprojResolveAssemblyReference.cache
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.Core\obj\Debug\Medicare.Core.dll
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.Core\obj\Debug\Medicare.Core.pdb
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.Core\bin\Debug\Medicare.Core.dll
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.Core\bin\Debug\Medicare.Core.pdb
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.Core\obj\Debug\Medicare.Core.dll
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.Core\obj\Debug\Medicare.Core.pdb

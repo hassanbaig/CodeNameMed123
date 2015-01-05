@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="Content/Images/favicon.ico">
+
+    <title>Mediacare - Find a Doctor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="Content/Assets/CSS/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="Content/Assets/CSS/main.css" rel="stylesheet">
+    <link href="Content/Assets/CSS/custom.css" rel="stylesheet">
+
+    <script type="text/javascript" src="Scripts/breeze.min.js"></script>
+
+    <script type="text/javascript" src="Scripts/angular.js"></script>
+    <!--<script type="text/javascript" src="Scripts/breeze.angular.q.js"></script>-->
+    <!--<script type="text/javascript" src="Scripts/datajs-1.1.3.js"></script>-->
+
+    <script type="text/javascript" src="Scripts/breeze.debug.js"></script>
+    <script type="text/javascript" src="Scripts/breeze.angular.js"></script>
+
+    <script type="text/javascript" src="App/Config/App.js"></script>
+    <!-- Fonts from Google Fonts -->
+    <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Helvetica" />-->
+    <link href="Content/Assets/CSS/demo.css" rel="stylesheet">
+    <link href="Content/Assets/CSS/style1.css" rel="stylesheet">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script type="text/javascript" src="App/Config/App.js"></script>
+    <script type="text/javascript" src="App/Config/SearchEntityManagerFactory.js"></script>
+    <script type="text/javascript" src="App/Controllers/SearchController.js"></script>
+    <script type="text/javascript" src="App/Services/SearchService.js"></script>
+    <script type="text/javascript" src="App/Logger.js"></script>
+    <link href="Content/Assets/CSS/angular.rangeSlider.css" rel="stylesheet">
+    <script type="text/javascript" src="App/CustomDirectives/angular.rangeSlider.js"></script>
+    <script type="text/javascript" src="App/CustomDirectives/rangeFilter.js"></script>
+    <script type="text/javascript" src="App/CustomDirectives/timeRangeFilter.js"></script>
+
+
+    <script type="text/javascript" src="http://fgnass.github.io/spin.js/spin.min.js"></script>
+    <script src="App/Animation/angular-spinner.js"></script>
+    <script type="text/javascript" src="Scripts/angular-animate.js"></script>
+    <link href="Content/animations.css" rel="stylesheet">
+    <script type="text/javascript" src="App/Animation/alerts-manager.js"></script>        
+
+    <script type="text/javascript" src="App/CustomDirectives/filters.js"></script>
+
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="Content/Assets/JS/jquery-1.3.2.min.js"></script>
+</head>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#page_effect').fadeIn(2000);
+
+    });
+
+</script>
+<style>
+        /*body {
+
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }*/
+        .tabbable {
+            /*    margin: 5px;*/
+            height: auto;
+            overflow: hidden;
+            /* border-bottom: 1px solid #ddd;*/
+        }
+
+        .nav-tabs {
+            margin: 0;
+        }
+
+        .tab-content {
+            height: 100%;
+            /* border-left: 1px solid #ddd ;
+        border-right: 1px solid #ddd; background-color:#FFF;*/
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+</style>
+
+<body id="page">
+    <ul class="cb-slideshow">
+        <li><span>Image 01</span></li>
+        <li><span>Image 02</span></li>
+        <li><span>Image 03</span></li>
+        <li><span>Image 04</span></li>
+        <li><span>Image 05</span></li>
+        <li><span>Image 06</span></li>
+    </ul>
+    <!--Container-->
+    <div class="container" data-ng-controller="searchController as searchControllerVM">
+
+        <!--Top Menu Row -->
+        <header class="row">
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="Index.html"><b>CareHub</b></a>
+                    </div>
+
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="Signup.html"><span class="glyphicon glyphicon-list"> </span> Get Listed Free</a></li>
+                            <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            <!--<li><a href="#"> <span class="glyphicon glyphicon-user"> </span> Sign Up</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Menu Row -->
+        <!-- Row -->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center" style="margin-top:90px">
+
+            </div>
+        </div>
+        <!-- Row End -->
+        <!-- Row -->
+        <div class="row">
+            <div id="page_effect" style="display:none;">
+
+                <div class="col-lg-3  ">
+                </div>
+
+
+                <div class="col-lg-6 " style=" border-radius:10px; width:auto; height:auto; padding:30px; background-image:url(Content/Images/bg1.png);" data-ng-init="searchControllerVM.getCountries();searchControllerVM.getSpecialties();searchControllerVM.getDoctors();searchControllerVM.getHospitals();searchControllerVM.getLabs();searchControllerVM.getPharmacists();searchControllerVM.getNurses();searchControllerVM.getTreatments();">
+
+                    <div class="col-md-1 col-sm-1 " style="margin-top:00px;  margin-bottom:00px; padding:0px;">
+                        <div class="dropdown">
+                            <div class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+                                <img data-ng-src="Content/Images/f{{searchControllerVM.searchSelectedCountryName}}.png" />  {{searchControllerVM.searchSelectedCityName}}
+                                <span class="caret"></span>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="row" style="width:300px; padding-left:30px; padding-right:30px">
+                                        <ul class="list-unstyled col-sm-6" style="padding:2px" data-ng-repeat="country in searchControllerVM.countriesList">
+                                            <li data-ng-click="searchControllerVM.getCities(country.countryId);"><img data-ng-src="Content/Images/f{{country.name}}.png" /> <span style="font-weight:bold;margin-left:2px">{{country.name}}</span></li>
+                                            <li class="dro" data-ng-repeat="city in searchControllerVM.citiesList" data-ng-if="city.countryId == country.countryId" data-ng-click="searchControllerVM.getLocalities(country.countryId,city.cityId);searchControllerVM.setCityCountry(city.name,city.cityId,city.countryId,country.name);"><a href=" #">{{city.name}}</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <h1 style="margin-top:0px;margin-bottom:20px">Find the Best Doctors</h1>
+                    <div class="tabbable" style="  margin:0 auto; ">
+                        <ul class="nav nav-pills" role="tablist" id="myTab" style="margin-top:10px; margin-bottom:20px">
+                            <li class="active"><a href="#spe" role="tab" data-toggle="tab" data-ng-click="searchControllerVM.clearAll();">Specialty</a></li>
+                            <li><a href="#doc" role="tab" data-toggle="tab" data-ng-click="searchControllerVM.clearAll();">Doctor</a></li>
+                            <li><a href="#hos" role="tab" data-toggle="tab" data-ng-click="searchControllerVM.clearAll();">Hospitals</a></li>
+                            <li><a href="#lab" role="tab" data-toggle="tab" data-ng-click="searchControllerVM.clearAll();">Labs</a></li>
+                            <li><a href="#pha" role="tab" data-toggle="tab" data-ng-click="searchControllerVM.clearAll();">Pharmacist</a></li>
+                            <li><a href="#nur" role="tab" data-toggle="tab" data-ng-click="searchControllerVM.clearAll();">Nurse</a></li>
+                            <li><a href="#tre" role="tab" data-toggle="tab" data-ng-click="searchControllerVM.clearAll();">Treatment</a></li>
+                        </ul>
+
+                        <div class="tab-content" style="margin-bottom:10px">
+                            <div class="tab-pane active" id="spe">
+                                <form class="form-inline" role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchSpecialty" list="doctorsSearchSpecialtiesDatalist" placeholder="Specialty">
+
+                                        <datalist id="doctorsSearchSpecialtiesDatalist" spellcheck="true">
+                                            <option data-ng-repeat="specialty in searchControllerVM.specialtiesList" value="{{specialty.title}}">
+                                        </datalist>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchLocality" list="doctorsSearchLocalitiesDatalist" placeholder="Area">
+
+                                        <datalist id="doctorsSearchLocalitiesDatalist" spellcheck="true">
+                                            <option data-ng-repeat="locality in searchControllerVM.localitiesList" value="{{locality.name}}">
+                                        </datalist>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-lg " data-ng-click="searchControllerVM.navigateToSearchPage(1);"><span class="glyphicon glyphicon-search"></span></button>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane" id="doc">
+                                <form class="form-inline" role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchDoctor" list="doctorsSearchDoctorsDatalist" placeholder="Doctor Name">
+
+                                        <datalist id="doctorsSearchDoctorsDatalist" spellcheck="true">
+                                            <option data-ng-repeat="doctor in searchControllerVM.doctorsList" value="{{doctor.firstName}} {{doctor.lastName}}">
+                                        </datalist>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchLocality" list="doctorsSearchLocalities2Datalist" placeholder="Area">
+
+                                        <datalist id="doctorsSearchLocalities2Datalist" spellcheck="true">
+                                            <option data-ng-repeat="locality in searchControllerVM.localitiesList" value="{{locality.name}}">
+                                        </datalist>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-lg " data-ng-click="searchControllerVM.navigateToSearchPage(3);"><span class="glyphicon glyphicon-search"></span></button>
+                                </form>
+                            </div>
+
+
+                            <div class="tab-pane" id="hos">
+                                <form class="form-inline" role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchHospital" list="doctorsSearchHospitalsDatalist" placeholder="Hospital Name">
+
+                                        <datalist id="doctorsSearchHospitalsDatalist" spellcheck="true">
+                                            <option data-ng-repeat="hospital in searchControllerVM.hospitalsList" value="{{hospital.name}}">
+                                        </datalist>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchLocality" list="doctorsSearchLocalities3Datalist" placeholder="Area">
+
+                                        <datalist id="doctorsSearchLocalities3Datalist" spellcheck="true">
+                                            <option data-ng-repeat="locality in searchControllerVM.localitiesList" value="{{locality.name}}">
+                                        </datalist>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-lg " data-ng-click="searchControllerVM.navigateToSearchPage(5)"><span class="glyphicon glyphicon-search"></span></button>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane" id="lab">
+                                <form class="form-inline" role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchLab" list="doctorsSearchLabsDatalist" placeholder="Report Name">
+
+                                        <datalist id="doctorsSearchLabsDatalist" spellcheck="true">
+                                            <option data-ng-repeat="lab in searchControllerVM.labsList" value="{{lab.name}}">
+                                        </datalist>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchLocality" list="doctorsSearchLocalities4Datalist" placeholder="Area">
+
+                                        <datalist id="doctorsSearchLocalities4Datalist" spellcheck="true">
+                                            <option data-ng-repeat="locality in searchControllerVM.localitiesList" value="{{locality.name}}">
+                                        </datalist>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-lg " data-ng-click="searchControllerVM.navigateToSearchPage(7);"><span class="glyphicon glyphicon-search"></span></button>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane" id="pha">
+                                <form class="form-inline" role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchPharmacist" list="doctorsSearchPharmacistsDatalist" placeholder="Pharmacist Name">
+
+                                        <datalist id="doctorsSearchPharmacistsDatalist" spellcheck="true">
+                                            <option data-ng-repeat="pharmacist in searchControllerVM.pharmacistsList" value="{{pharmacist.firstName}} {{pharmacist.lastName}}">
+                                        </datalist>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchLocality" list="doctorsSearchLocalities5Datalist" placeholder="Area">
+
+                                        <datalist id="doctorsSearchLocalities5Datalist" spellcheck="true">
+                                            <option data-ng-repeat="locality in searchControllerVM.localitiesList" value="{{locality.name}}">
+                                        </datalist>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-lg " data-ng-click="searchControllerVM.navigateToSearchPage(9);"><span class="glyphicon glyphicon-search"></span></button>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane" id="nur">
+                                <form class="form-inline" role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchNurse" list="doctorsSearchNursesDatalist" placeholder="Nurse Name">
+
+                                        <datalist id="doctorsSearchNursesDatalist" spellcheck="true">
+                                            <option data-ng-repeat="nurse in searchControllerVM.nursesList" value="{{nurse.firstName}} {{nurse.lastName}}">
+                                        </datalist>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchLocality" list="doctorsSearchLocalities6Datalist" placeholder="Area">
+
+                                        <datalist id="doctorsSearchLocalities6Datalist" spellcheck="true">
+                                            <option data-ng-repeat="locality in searchControllerVM.localitiesList" value="{{locality.name}}">
+                                        </datalist>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-lg " data-ng-click="searchControllerVM.navigateToSearchPage(11);"><span class="glyphicon glyphicon-search"></span></button>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane" id="tre">
+                                <form class="form-inline" role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchTreatment" list="doctorsSearchTreatmentsDatalist" placeholder="Treatment Name">
+
+                                        <datalist id="doctorsSearchTreatmentsDatalist" spellcheck="true">
+                                            <option data-ng-repeat="treatment in searchControllerVM.treatmentsList" value="{{treatment.name}}">
+                                        </datalist>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-ng-model="searchControllerVM.doctorsSearchLocality" list="doctorsSearchLocalities7Datalist" placeholder="Area">
+
+                                        <datalist id="doctorsSearchLocalities7Datalist" spellcheck="true">
+                                            <option data-ng-repeat="locality in searchControllerVM.localitiesList" value="{{locality.name}}">
+                                        </datalist>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-lg " data-ng-click="searchControllerVM.navigateToSearchPage(13);"><span class="glyphicon glyphicon-search"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3  ">
+                    </div>
+
+                </div>
+                <!-- Row End -->
+
+
+                <div id="footer" class="row">
+                    <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color:#000">
+                        <div class="navbar-inner navbar-content-center">
+                            <div class="col-lg-4 centered">
+                                <a href="#" class="btn btn-link" role="button" style="color:#fff; font-size:11px;">About US</a>
+                                <a href="#" class="btn btn-link" role="button" style="color:#fff; font-size:11px;">Contact</a>
+                                <a href="#" class="btn btn-link" role="button" style="color:#fff; font-size:11px;">T & T</a>
+                                <a href="#" class="btn btn-link" role="button" style="color:#fff; font-size:11px;">Privacy</a>
+                                <a href="#" class="btn btn-link" role="button" style="color:#fff; font-size:11px;">Doctor</a>
+                            </div>
+                            <div class="col-lg-4">
+
+                            </div>
+                            <div class="col-lg-4 centered">
+                                <span style="font-size:11px; color:#FFF">Copyright © 2014, CareHub. All Rights Reserved</span>
+
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    
+            <!-- /container -->
+
+            <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+            <script src="Content/Assets/JS/bootstrap.min.js"></script>
+</body>
+</html>
+
+<script>
+    $('#myTab a[href="#home"]').tab('show') // Select tab by name
+    $(".dropdown-menu li a").click(function () {
+        var selText = $(this).text();
+        $(this).parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+    });
+
+    $("#btnSearch").click(function () {
+        alert($('.btn-select').text() + ", " + $('.btn-select2').text());
+    });
+</script>

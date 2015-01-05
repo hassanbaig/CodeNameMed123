@@ -1,0 +1,8 @@
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.DataModel\bin\Debug\Medicare.DataModel.dll
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.DataModel\bin\Debug\Medicare.DataModel.pdb
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.DataModel\obj\Debug\Medicare.DataModel.dll
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.DataModel\obj\Debug\Medicare.DataModel.pdb
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DataModel\bin\Debug\Medicare.DataModel.dll
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DataModel\bin\Debug\Medicare.DataModel.pdb
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DataModel\obj\Debug\Medicare.DataModel.dll
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DataModel\obj\Debug\Medicare.DataModel.pdb

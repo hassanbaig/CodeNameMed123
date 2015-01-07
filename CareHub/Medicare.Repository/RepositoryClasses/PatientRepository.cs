@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CareHub.Data;
+using Medicare.Data;
 using CareHub.Factory.Factories;
 
 namespace CareHub.Repository.RepositoryClasses

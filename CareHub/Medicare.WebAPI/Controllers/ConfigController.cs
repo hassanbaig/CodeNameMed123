@@ -8,7 +8,8 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using Newtonsoft.Json.Linq;
 using Breeze.WebApi2;
-
+using Medicare.Data;
+using CareHub.Core;
 
 namespace CareHub.WebAPI.Controllers
 {
@@ -42,9 +43,9 @@ namespace CareHub.WebAPI.Controllers
                
 
         [HttpGet]
-        public IQueryable<CareHub.Data.Specialty> GetSpecialties()
+        public IQueryable<Medicare.Data.Specialty> GetSpecialties()
         {
-            CareHub.Data.shiner49_CareHubEntities db = new Data.shiner49_CareHubEntities();
+            Medicare.Data.shiner49_medicareEntities db = new Medicare.Data.shiner49_medicareEntities();
             
             //specialties.Add("Allergy and Immunology");
             //specialties.Add("Orthopaedics");

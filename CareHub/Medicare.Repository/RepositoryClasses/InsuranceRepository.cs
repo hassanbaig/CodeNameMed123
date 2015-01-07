@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CareHub.Data;
+using Medicare.Data;
 using CareHub.Factory.Factories;
 
 namespace CareHub.Repository.RepositoryClasses
@@ -14,8 +14,8 @@ namespace CareHub.Repository.RepositoryClasses
         {
 
         }
-        private shiner49_CareHubEntities _context;
-        public shiner49_CareHubEntities DataContext
+        private shiner49_medicareEntities _context;
+        public shiner49_medicareEntities DataContext
         {
             set { _context = value; }
         }    

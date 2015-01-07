@@ -94,6 +94,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Medicare.Core\CareHub.Core.csproj">
+      <Project>{98afd916-b534-4665-ad52-12766c55e0fa}</Project>
+      <Name>CareHub.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Medicare.DataModel\CareHub.DataModel.csproj">
       <Project>{74d80bfd-3fab-4423-8110-ede20caffaa2}</Project>
       <Name>CareHub.DataModel</Name>

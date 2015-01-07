@@ -72,7 +72,6 @@ C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.Web
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.WebAPI\obj\Debug\CareHub.WebAPI.csprojResolveAssemblyReference.cache
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.WebAPI\obj\Debug\Medicare.WebAPI.dll
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.WebAPI\obj\Debug\Medicare.WebAPI.pdb
-C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.WebAPI\obj\Debug\CareHub.WebAPI.csprojResolveAssemblyReference.cache
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.WebAPI\bin\Medicare.WebAPI.dll.config
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.WebAPI\bin\Medicare.WebAPI.dll
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.WebAPI\bin\Medicare.WebAPI.pdb
@@ -144,5 +143,6 @@ C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.WebAPI\bin\ko\
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.WebAPI\bin\ru\System.Spatial.resources.dll
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.WebAPI\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.WebAPI\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.WebAPI\obj\Debug\CareHub.WebAPI.csprojResolveAssemblyReference.cache
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.WebAPI\obj\Debug\Medicare.WebAPI.dll
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.WebAPI\obj\Debug\Medicare.WebAPI.pdb

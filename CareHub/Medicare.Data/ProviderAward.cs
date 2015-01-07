@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CareHub.Data
+namespace Medicare.Data
 {
     using System;
     using System.Collections.Generic;

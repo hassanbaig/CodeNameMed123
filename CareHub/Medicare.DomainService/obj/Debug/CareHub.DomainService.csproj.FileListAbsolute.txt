@@ -19,7 +19,6 @@ C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.Dom
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.DomainService\obj\Debug\CareHub.DomainService.csprojResolveAssemblyReference.cache
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.DomainService\obj\Debug\Medicare.DomainService.dll
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.DomainService\obj\Debug\Medicare.DomainService.pdb
-C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DomainService\obj\Debug\CareHub.DomainService.csprojResolveAssemblyReference.cache
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DomainService\bin\Debug\Medicare.DomainService.dll
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DomainService\bin\Debug\Medicare.DomainService.pdb
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DomainService\bin\Debug\Medicare.Core.dll
@@ -38,5 +37,6 @@ C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DomainService\
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DomainService\bin\Debug\Medicare.Data.pdb
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DomainService\bin\Debug\Medicare.Repository.pdb
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DomainService\bin\Debug\EntityFramework.xml
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DomainService\obj\Debug\CareHub.DomainService.csprojResolveAssemblyReference.cache
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DomainService\obj\Debug\Medicare.DomainService.dll
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.DomainService\obj\Debug\Medicare.DomainService.pdb

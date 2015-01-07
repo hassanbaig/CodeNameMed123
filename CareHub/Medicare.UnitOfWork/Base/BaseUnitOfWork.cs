@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Configuration;
 using System.Threading.Tasks;
-using CareHub.Data;
+using Medicare.Data;
 using CareHub.Factory.Factories;
 
 namespace CareHub.UnitOfWork.Base
@@ -12,7 +12,7 @@ namespace CareHub.UnitOfWork.Base
     public class BaseUnitOfWork : IDisposable
     {
        protected FactoryFacade Factory;
-       protected shiner49_CareHubEntities Context;
+       protected shiner49_medicareEntities Context;
        protected List<AbstractDomainModel> DomainModelCollection;
        private bool _disposed;
        private string InitializeConnectionString()
@@ -24,7 +24,7 @@ namespace CareHub.UnitOfWork.Base
        public BaseUnitOfWork()
        {
            DomainModelCollection = new List<AbstractDomainModel>();
-           Context = new shiner49_CareHubEntities();
+           Context = new shiner49_medicareEntities();
            Factory = new FactoryFacade();
            if (Context.Database.Connection.State == System.Data.ConnectionState.Closed)
            {
@@ -32,7 +32,7 @@ namespace CareHub.UnitOfWork.Base
                Context.Database.Connection.Open();
            }
        }
-       public BaseUnitOfWork(shiner49_CareHubEntities context)
+       public BaseUnitOfWork(shiner49_medicareEntities context)
        {
            if (context != null)
            {
@@ -44,7 +44,7 @@ namespace CareHub.UnitOfWork.Base
                }
            }
        }
-       public BaseUnitOfWork(shiner49_CareHubEntities context, List<AbstractDomainModel> domainModelCollection)
+       public BaseUnitOfWork(shiner49_medicareEntities context, List<AbstractDomainModel> domainModelCollection)
        {
            if (context != null)
            {
@@ -58,7 +58,7 @@ namespace CareHub.UnitOfWork.Base
            DomainModelCollection = domainModelCollection;
           
        }
-       public BaseUnitOfWork(shiner49_CareHubEntities context, List<AbstractDomainModel> domainModelCollection, FactoryFacade factory)
+       public BaseUnitOfWork(shiner49_medicareEntities context, List<AbstractDomainModel> domainModelCollection, FactoryFacade factory)
        {
            if (context != null)
            {

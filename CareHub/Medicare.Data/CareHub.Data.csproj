@@ -61,264 +61,264 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Accreditation.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Affiliation.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Appointment.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Award.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BillingCurrency.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CareHubModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CareHubModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CareHubModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CareHubModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CareHubModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="City.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="College.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Country.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Degree.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="FavoriteProvider.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Gender.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileAllergy.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileBloodGlucose.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileBloodPressure.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileCholestrol.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileDiet.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileExercise.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileFamilyHistory.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileHeight.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileImmunization.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileLabTest.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileMedicalCondition.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileMedicalDocument.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileMedication.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileProcedure.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HealthProfileWeight.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Insurance.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Language.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Locality.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MedicareModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MedicareModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MedicareModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MedicareModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MedicareModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MedicareModel.edmx</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Patient.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="PatientHealthTopic.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="PatientQuery.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="PatientQueryFollowUp.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="PatientQueryPayment.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="PatientQueryProvider.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Practice.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="PracticeType.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Premis.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Provider.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderAccreditation.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderAffiliation.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderAvailability.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderAward.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderContact.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderEducation.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderExperience.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderFee.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderInsurance.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderLanguage.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderLocality.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderPhoto.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderPractice.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderPremis.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderReview.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderService.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderSpecialty.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderTiming.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderTreatment.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderType.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ProviderVideo.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="RegistrationCouncil.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="SecurityQuestion.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Service.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ServiceType.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Specialty.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="State.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Treatment.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="UserFeedback.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="UserFollowDoctor.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="UserFollowPatient.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="UserLoginAudit.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="UserPrefrence.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="UserRole.cs">
-      <DependentUpon>MedicareModel.tt</DependentUpon>
+      <DependentUpon>CareHubModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <EntityDeploy Include="MedicareModel.edmx">
+    <EntityDeploy Include="CareHubModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MedicareModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>CareHubModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="MedicareModel.Context.tt">
+    <None Include="CareHubModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MedicareModel.edmx</DependentUpon>
-      <LastGenOutput>MedicareModel.Context.cs</LastGenOutput>
+      <DependentUpon>CareHubModel.edmx</DependentUpon>
+      <LastGenOutput>CareHubModel.Context.cs</LastGenOutput>
     </None>
-    <None Include="MedicareModel.edmx.diagram">
-      <DependentUpon>MedicareModel.edmx</DependentUpon>
+    <None Include="CareHubModel.edmx.diagram">
+      <DependentUpon>CareHubModel.edmx</DependentUpon>
     </None>
-    <None Include="MedicareModel.tt">
+    <None Include="CareHubModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MedicareModel.edmx</DependentUpon>
-      <LastGenOutput>MedicareModel.cs</LastGenOutput>
+      <DependentUpon>CareHubModel.edmx</DependentUpon>
+      <LastGenOutput>CareHubModel.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

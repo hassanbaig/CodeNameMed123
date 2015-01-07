@@ -77,6 +77,30 @@ namespace CareHub.WebAPI.Controllers
             return practiceEditDetails;
         }
 
+
+        //GET Practices Information
+          [HttpGet]
+          public PracticeEditDetails GetPracticePractice(long? providerId)
+          {
+              FactoryFacade factory = new FactoryFacade();
+              string data = TicketHelper.GetDecryptedUserId();
+              PracticeEditDetails practiceEditDetails = null;
+
+              if (data != null)
+              {
+                  string[] dataList = data.Split(',');
+
+                  domainModel = factory.DomainModelFactory.CreateDomainModel(typeof(PracticeEditDetails));
+                  if (providerId == 0)
+                  { domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], Convert.ToInt64(dataList[1]), 22, 1)); }
+                  else
+                  { domainModel.Fill(HashHelper.PracticeEditDetailsGetAddedInfo(dataList[0], (long)providerId, 22, 1)); }
+                  domainService = factory.DomainServiceFactory.CreateDomainService(typeof(PracticesDomainService));
+                  practiceEditDetails = ((DomainModel.Models.PracticeEditDetails)domainService.Query(domainModel, CareHub.Factory.Enumerations.DomainModelEnum.PRACTICE_EDIT_DETAILS_GET_DETAILS)).PracticeInfo;
+              }
+              return practiceEditDetails;
+          }
+
         //Test Pop Up
         //[HttpGet]
         //public PracticeEditDetails GetProviderPractices(long? providerId)

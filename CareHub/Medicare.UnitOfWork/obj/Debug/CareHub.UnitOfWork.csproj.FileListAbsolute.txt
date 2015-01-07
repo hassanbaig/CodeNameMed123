@@ -20,7 +20,6 @@ C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.Uni
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.UnitOfWork\obj\Debug\CareHub.UnitOfWork.csprojResolveAssemblyReference.cache
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.UnitOfWork\obj\Debug\Medicare.UnitOfWork.dll
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\ShinersoftMedicare\Medicare.UnitOfWork\obj\Debug\Medicare.UnitOfWork.pdb
-C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.UnitOfWork\obj\Debug\CareHub.UnitOfWork.csprojResolveAssemblyReference.cache
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.UnitOfWork\bin\Debug\Medicare.UnitOfWork.dll.config
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.UnitOfWork\bin\Debug\Medicare.UnitOfWork.dll
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.UnitOfWork\bin\Debug\Medicare.UnitOfWork.pdb
@@ -40,5 +39,6 @@ C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.UnitOfWork\bin
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.UnitOfWork\bin\Debug\Medicare.Repository.pdb
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.UnitOfWork\bin\Debug\EntityFramework.xml
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.UnitOfWork\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.UnitOfWork\obj\Debug\CareHub.UnitOfWork.csprojResolveAssemblyReference.cache
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.UnitOfWork\obj\Debug\Medicare.UnitOfWork.dll
 C:\Users\Zeeshan\Documents\GitHub\CodeNameMed123\CareHub\Medicare.UnitOfWork\obj\Debug\Medicare.UnitOfWork.pdb

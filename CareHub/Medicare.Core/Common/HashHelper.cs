@@ -495,6 +495,16 @@ namespace CareHub.Core.Common
             return practiceEditDetails;
         }
 
+        public static Hashtable PracticeInfoGetAddedInfo(string userId, long providerId, long practiceId, int operationType)
+        {
+            Hashtable practiceEditDetails = new Hashtable();
+            practiceEditDetails["UserId"] = userId;
+            practiceEditDetails["ProviderId"] = providerId;
+            practiceEditDetails["PracticeId"] = practiceId;
+            practiceEditDetails["OperationType"] = operationType;
+            return practiceEditDetails;
+        }
+
         public static Hashtable PracticeEditDetailsGetProviderPractices(string userId, long providerId, int operationType)
         {
             Hashtable practiceEditDetails = new Hashtable();

@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CareHub.Data
+namespace Medicare.Data
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class shiner49_CareHubEntities : DbContext
+    public partial class shiner49_medicareEntities : DbContext
     {
-        public shiner49_CareHubEntities()
-            : base("name=shiner49_CareHubEntities")
+        public shiner49_medicareEntities()
+            : base("name=shiner49_medicareEntities")
         {
         }
     

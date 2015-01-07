@@ -19,7 +19,7 @@
 
         //var serviceName = 'http://localhost:5555' + '/CareHub/v1/';
 
-        var serviceName = 'http://localhost/CareHubwebapi' + '/CareHub/v1/Config';
+        var serviceName = 'http://localhost/medicarewebapi' + '/CareHub/v1/Config';
         
         var factory = {
             newManager: newManager,
@@ -80,7 +80,7 @@
     }
 
     function newManager() {
-        var serviceName = 'http://localhost/CareHubwebapi' + '/CareHub/v1/Config';
+        var serviceName = 'http://localhost/medicarewebapi' + '/CareHub/v1/Config';
         var manager = new breeze.EntityManager(serviceName);
         return manager;
     }

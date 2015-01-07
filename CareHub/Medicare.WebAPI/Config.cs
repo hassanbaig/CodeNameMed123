@@ -9,7 +9,7 @@ namespace CareHub.WebAPI
     {
         public static List<long> GetSpecialties()
         {
-            //CareHub.Data.shiner49_CareHubEntities db = new Data.shiner49_CareHubEntities();
+            //CareHub.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<long> specialtiesList = new List<long>();
@@ -38,7 +38,7 @@ namespace CareHub.WebAPI
 
         public static List<string> GetServices()
         {
-            //CareHub.Data.shiner49_CareHubEntities db = new Data.shiner49_CareHubEntities();
+            //CareHub.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<string> servicesList = new List<string>();
@@ -53,7 +53,7 @@ namespace CareHub.WebAPI
 
         public static List<string> GetTravelServices()
         {
-            //CareHub.Data.shiner49_CareHubEntities db = new Data.shiner49_CareHubEntities();
+            //CareHub.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<string> travelServicesList = new List<string>();
@@ -68,7 +68,7 @@ namespace CareHub.WebAPI
 
         public static List<string> GetPremises()
         {
-            //CareHub.Data.shiner49_CareHubEntities db = new Data.shiner49_CareHubEntities();
+            //CareHub.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<string> premisesList = new List<string>();
@@ -84,7 +84,7 @@ namespace CareHub.WebAPI
 
         public static List<string> GetLanguages()
         {
-            //CareHub.Data.shiner49_CareHubEntities db = new Data.shiner49_CareHubEntities();
+            //CareHub.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<string> languagesList = new List<string>();
@@ -98,7 +98,7 @@ namespace CareHub.WebAPI
         }
         public static List<string> GetAccreditations()
         {
-            //CareHub.Data.shiner49_CareHubEntities db = new Data.shiner49_CareHubEntities();
+            //CareHub.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<string> accreditationsList = new List<string>();
@@ -114,7 +114,7 @@ namespace CareHub.WebAPI
 
         public static List<string> GetInsurances()
         {
-            //CareHub.Data.shiner49_CareHubEntities db = new Data.shiner49_CareHubEntities();
+            //CareHub.Data.shiner49_medicareEntities db = new Data.shiner49_medicareEntities();
             //return db.Specialties;
 
             List<string> insurancesList = new List<string>();

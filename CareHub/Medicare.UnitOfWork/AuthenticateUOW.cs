@@ -5,7 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CareHub.Data;
+using Medicare.Data;
 using CareHub.Factory.Factories;
 using CareHub.UnitOfWork.Base;
 using CareHub.DomainModel.Models;
@@ -30,7 +30,7 @@ namespace CareHub.UnitOfWork
                 ((IUnitOfWork)this).InitializeRepositories();
             }
         }
-        public AuthenticateUOW(shiner49_CareHubEntities context)
+        public AuthenticateUOW(shiner49_medicareEntities context)
             : base(context)
         {
             if (context == null)

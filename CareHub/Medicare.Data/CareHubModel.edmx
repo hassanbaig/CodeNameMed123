@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="shiner49_CareHubModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="shiner49_medicareModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Accreditation">
           <Key>
             <PropertyRef Name="AccreditationId" />
@@ -1864,7 +1864,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="shiner49_CareHubModelStoreContainer">
+        <EntityContainer Name="shiner49_medicareModelStoreContainer">
           <EntitySet Name="Accreditation" EntityType="Self.Accreditation" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Affiliation" EntityType="Self.Affiliation" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Appointment" EntityType="Self.Appointment" Schema="dbo" store:Type="Tables" />
@@ -2296,7 +2296,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="shiner49_CareHubModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="shiner49_medicareModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Accreditation">
           <Key>
             <PropertyRef Name="AccreditationId" />
@@ -4332,7 +4332,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="shiner49_CareHubEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="shiner49_medicareEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Accreditations" EntityType="Self.Accreditation" />
           <EntitySet Name="Affiliations" EntityType="Self.Affiliation" />
           <EntitySet Name="Appointments" EntityType="Self.Appointment" />
@@ -4765,9 +4765,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="shiner49_CareHubModelStoreContainer" CdmEntityContainer="shiner49_CareHubEntities">
+        <EntityContainerMapping StorageEntityContainer="shiner49_medicareModelStoreContainer" CdmEntityContainer="shiner49_medicareEntities">
           <EntitySetMapping Name="Accreditations">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Accreditation">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Accreditation">
               <MappingFragment StoreEntitySet="Accreditation">
                 <ScalarProperty Name="AccreditationId" ColumnName="AccreditationId" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
@@ -4776,7 +4776,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Affiliations">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Affiliation">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Affiliation">
               <MappingFragment StoreEntitySet="Affiliation">
                 <ScalarProperty Name="AffiliationId" ColumnName="AffiliationId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -4785,7 +4785,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Appointments">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Appointment">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Appointment">
               <MappingFragment StoreEntitySet="Appointment">
                 <ScalarProperty Name="AppointmentId" ColumnName="AppointmentId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -4797,7 +4797,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Awards">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Award">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Award">
               <MappingFragment StoreEntitySet="Award">
                 <ScalarProperty Name="AwardId" ColumnName="AwardId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -4806,7 +4806,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="BillingCurrencies">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.BillingCurrency">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.BillingCurrency">
               <MappingFragment StoreEntitySet="BillingCurrency">
                 <ScalarProperty Name="BillingCurrencyId" ColumnName="BillingCurrencyId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -4815,7 +4815,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Cities">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.City">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.City">
               <MappingFragment StoreEntitySet="City">
                 <ScalarProperty Name="CityId" ColumnName="CityId" />
                 <ScalarProperty Name="CountryId" ColumnName="CountryId" />
@@ -4824,7 +4824,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Colleges">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.College">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.College">
               <MappingFragment StoreEntitySet="College">
                 <ScalarProperty Name="CollegeId" ColumnName="CollegeId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -4833,7 +4833,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Countries">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Country">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Country">
               <MappingFragment StoreEntitySet="Country">
                 <ScalarProperty Name="CountryId" ColumnName="CountryId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -4842,7 +4842,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Degrees">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Degree">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Degree">
               <MappingFragment StoreEntitySet="Degree">
                 <ScalarProperty Name="DegreeId" ColumnName="DegreeId" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
@@ -4851,7 +4851,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="FavoriteProviders">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.FavoriteProvider">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.FavoriteProvider">
               <MappingFragment StoreEntitySet="FavoriteProvider">
                 <ScalarProperty Name="FavoriteProviderId" ColumnName="FavoriteProviderId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -4860,7 +4860,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Genders">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Gender">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Gender">
               <MappingFragment StoreEntitySet="Gender">
                 <ScalarProperty Name="GenderId" ColumnName="GenderId" />
                 <ScalarProperty Name="Value" ColumnName="Value" />
@@ -4868,7 +4868,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileAllergies">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileAllergy">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileAllergy">
               <MappingFragment StoreEntitySet="HealthProfileAllergy">
                 <ScalarProperty Name="HealthProfileAllergyId" ColumnName="HealthProfileAllergyId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -4881,7 +4881,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileBloodGlucoses">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileBloodGlucose">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileBloodGlucose">
               <MappingFragment StoreEntitySet="HealthProfileBloodGlucose">
                 <ScalarProperty Name="HealthProfileBloodGlucoseId" ColumnName="HealthProfileBloodGlucoseId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -4894,7 +4894,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileBloodPressures">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileBloodPressure">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileBloodPressure">
               <MappingFragment StoreEntitySet="HealthProfileBloodPressure">
                 <ScalarProperty Name="HealthProfileBloodPressureId" ColumnName="HealthProfileBloodPressureId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -4908,7 +4908,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileCholestrols">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileCholestrol">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileCholestrol">
               <MappingFragment StoreEntitySet="HealthProfileCholestrol">
                 <ScalarProperty Name="HealthProfileCholestrolId" ColumnName="HealthProfileCholestrolId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -4923,7 +4923,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileDiets">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileDiet">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileDiet">
               <MappingFragment StoreEntitySet="HealthProfileDiet">
                 <ScalarProperty Name="HealthProfileDietId" ColumnName="HealthProfileDietId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -4939,7 +4939,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileExercises">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileExercise">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileExercise">
               <MappingFragment StoreEntitySet="HealthProfileExercise">
                 <ScalarProperty Name="HealthProfileExerciseId" ColumnName="HealthProfileExerciseId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -4955,7 +4955,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileFamilyHistories">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileFamilyHistory">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileFamilyHistory">
               <MappingFragment StoreEntitySet="HealthProfileFamilyHistory">
                 <ScalarProperty Name="HealthProfileFamilyHistoryId" ColumnName="HealthProfileFamilyHistoryId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -4974,7 +4974,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileHeights">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileHeight">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileHeight">
               <MappingFragment StoreEntitySet="HealthProfileHeight">
                 <ScalarProperty Name="HealthProfileHeightId" ColumnName="HealthProfileHeightId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -4987,7 +4987,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileImmunizations">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileImmunization">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileImmunization">
               <MappingFragment StoreEntitySet="HealthProfileImmunization">
                 <ScalarProperty Name="HealthProfileImmunizationId" ColumnName="HealthProfileImmunizationId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -5002,7 +5002,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileLabTests">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileLabTest">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileLabTest">
               <MappingFragment StoreEntitySet="HealthProfileLabTest">
                 <ScalarProperty Name="HealthProfileLabTestId" ColumnName="HealthProfileLabTestId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -5019,7 +5019,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileMedicalConditions">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileMedicalCondition">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileMedicalCondition">
               <MappingFragment StoreEntitySet="HealthProfileMedicalCondition">
                 <ScalarProperty Name="HealthProfileMedicalConditionId" ColumnName="HealthProfileMedicalConditionId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -5033,7 +5033,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileMedicalDocuments">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileMedicalDocument">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileMedicalDocument">
               <MappingFragment StoreEntitySet="HealthProfileMedicalDocument">
                 <ScalarProperty Name="HealthProfileMedicalDocumentId" ColumnName="HealthProfileMedicalDocumentId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -5044,7 +5044,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileMedications">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileMedication">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileMedication">
               <MappingFragment StoreEntitySet="HealthProfileMedication">
                 <ScalarProperty Name="HealthProfileMedicationId" ColumnName="HealthProfileMedicationId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -5059,7 +5059,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileProcedures">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileProcedure">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileProcedure">
               <MappingFragment StoreEntitySet="HealthProfileProcedure">
                 <ScalarProperty Name="HealthProfileProcedureId" ColumnName="HealthProfileProcedureId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -5072,7 +5072,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HealthProfileWeights">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.HealthProfileWeight">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.HealthProfileWeight">
               <MappingFragment StoreEntitySet="HealthProfileWeight">
                 <ScalarProperty Name="HealthProfileWeightId" ColumnName="HealthProfileWeightId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -5083,7 +5083,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Insurances">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Insurance">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Insurance">
               <MappingFragment StoreEntitySet="Insurance">
                 <ScalarProperty Name="InsuranceId" ColumnName="InsuranceId" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
@@ -5092,7 +5092,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Languages">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Language">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Language">
               <MappingFragment StoreEntitySet="Language">
                 <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -5101,7 +5101,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Localities">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Locality">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Locality">
               <MappingFragment StoreEntitySet="Locality">
                 <ScalarProperty Name="LocalityId" ColumnName="LocalityId" />
                 <ScalarProperty Name="CountryId" ColumnName="CountryId" />
@@ -5111,7 +5111,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Patients">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Patient">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Patient">
               <MappingFragment StoreEntitySet="Patient">
                 <ScalarProperty Name="PatientId" ColumnName="PatientId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -5126,7 +5126,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PatientHealthTopics">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.PatientHealthTopic">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.PatientHealthTopic">
               <MappingFragment StoreEntitySet="PatientHealthTopics">
                 <ScalarProperty Name="PatientHealthTopicsId" ColumnName="PatientHealthTopicsId" />
                 <ScalarProperty Name="PatientId" ColumnName="PatientId" />
@@ -5136,7 +5136,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PatientQueries">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.PatientQuery">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.PatientQuery">
               <MappingFragment StoreEntitySet="PatientQuery">
                 <ScalarProperty Name="PatientQueryId" ColumnName="PatientQueryId" />
                 <ScalarProperty Name="PatientId" ColumnName="PatientId" />
@@ -5157,7 +5157,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PatientQueryFollowUps">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.PatientQueryFollowUp">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.PatientQueryFollowUp">
               <MappingFragment StoreEntitySet="PatientQueryFollowUp">
                 <ScalarProperty Name="PatientQueryFollowUpID" ColumnName="PatientQueryFollowUpID" />
                 <ScalarProperty Name="PatientQueryId" ColumnName="PatientQueryId" />
@@ -5168,7 +5168,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PatientQueryPayments">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.PatientQueryPayment">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.PatientQueryPayment">
               <MappingFragment StoreEntitySet="PatientQueryPayment">
                 <ScalarProperty Name="PatientQueryPaymentId" ColumnName="PatientQueryPaymentId" />
                 <ScalarProperty Name="PatientId" ColumnName="PatientId" />
@@ -5186,7 +5186,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PatientQueryProviders">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.PatientQueryProvider">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.PatientQueryProvider">
               <MappingFragment StoreEntitySet="PatientQueryProvider">
                 <ScalarProperty Name="PatientQueryProviderId" ColumnName="PatientQueryProviderId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5197,7 +5197,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Practices">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Practice">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Practice">
               <MappingFragment StoreEntitySet="Practice">
                 <ScalarProperty Name="PracticeId" ColumnName="PracticeId" />
                 <ScalarProperty Name="PracticeTypeId" ColumnName="PracticeTypeId" />
@@ -5224,7 +5224,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PracticeTypes">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.PracticeType">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.PracticeType">
               <MappingFragment StoreEntitySet="PracticeType">
                 <ScalarProperty Name="PracticeTypeId" ColumnName="PracticeTypeId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -5233,7 +5233,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Premises">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Premis">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Premis">
               <MappingFragment StoreEntitySet="Premises">
                 <ScalarProperty Name="PremisesId" ColumnName="PremisesId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -5242,7 +5242,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Providers">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Provider">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Provider">
               <MappingFragment StoreEntitySet="Provider">
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
                 <ScalarProperty Name="ProviderTypeId" ColumnName="ProviderTypeId" />
@@ -5276,7 +5276,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderAccreditations">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderAccreditation">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderAccreditation">
               <MappingFragment StoreEntitySet="ProviderAccreditation">
                 <ScalarProperty Name="ProviderAccreditationId" ColumnName="ProviderAccreditationId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5285,7 +5285,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderAffiliations">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderAffiliation">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderAffiliation">
               <MappingFragment StoreEntitySet="ProviderAffiliation">
                 <ScalarProperty Name="ProviderAffiliationId" ColumnName="ProviderAffiliationId" />
                 <ScalarProperty Name="AffiliationId" ColumnName="AffiliationId" />
@@ -5295,7 +5295,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderAvailabilities">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderAvailability">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderAvailability">
               <MappingFragment StoreEntitySet="ProviderAvailability">
                 <ScalarProperty Name="ProviderAvalibilityId" ColumnName="ProviderAvalibilityId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5308,7 +5308,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderAwards">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderAward">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderAward">
               <MappingFragment StoreEntitySet="ProviderAward">
                 <ScalarProperty Name="ProviderAwardId" ColumnName="ProviderAwardId" />
                 <ScalarProperty Name="AwardId" ColumnName="AwardId" />
@@ -5318,7 +5318,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderContacts">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderContact">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderContact">
               <MappingFragment StoreEntitySet="ProviderContacts">
                 <ScalarProperty Name="ProviderContactsId" ColumnName="ProviderContactsId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5331,7 +5331,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderEducations">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderEducation">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderEducation">
               <MappingFragment StoreEntitySet="ProviderEducation">
                 <ScalarProperty Name="ProviderEducationId" ColumnName="ProviderEducationId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5342,7 +5342,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderExperiences">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderExperience">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderExperience">
               <MappingFragment StoreEntitySet="ProviderExperience">
                 <ScalarProperty Name="ProviderExperienceId" ColumnName="ProviderExperienceId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5356,7 +5356,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderFees">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderFee">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderFee">
               <MappingFragment StoreEntitySet="ProviderFee">
                 <ScalarProperty Name="ProviderFeeId" ColumnName="ProviderFeeId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5368,7 +5368,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderInsurances">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderInsurance">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderInsurance">
               <MappingFragment StoreEntitySet="ProviderInsurance">
                 <ScalarProperty Name="ProviderInsuranceId" ColumnName="ProviderInsuranceId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5377,7 +5377,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderLanguages">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderLanguage">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderLanguage">
               <MappingFragment StoreEntitySet="ProviderLanguage">
                 <ScalarProperty Name="ProviderLanguageId" ColumnName="ProviderLanguageId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5386,7 +5386,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderLocalities">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderLocality">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderLocality">
               <MappingFragment StoreEntitySet="ProviderLocality">
                 <ScalarProperty Name="ProviderLocalityId" ColumnName="ProviderLocalityId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5395,7 +5395,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderPhotoes">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderPhoto">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderPhoto">
               <MappingFragment StoreEntitySet="ProviderPhoto">
                 <ScalarProperty Name="ProviderPhotoId" ColumnName="ProviderPhotoId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5407,7 +5407,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderPractices">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderPractice">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderPractice">
               <MappingFragment StoreEntitySet="ProviderPractice">
                 <ScalarProperty Name="ProviderPracticeId" ColumnName="ProviderPracticeId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5416,7 +5416,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderPremises">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderPremis">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderPremis">
               <MappingFragment StoreEntitySet="ProviderPremises">
                 <ScalarProperty Name="ProviderPremisesId" ColumnName="ProviderPremisesId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5425,7 +5425,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderReviews">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderReview">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderReview">
               <MappingFragment StoreEntitySet="ProviderReview">
                 <ScalarProperty Name="ProviderReviewId" ColumnName="ProviderReviewId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5436,7 +5436,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderServices">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderService">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderService">
               <MappingFragment StoreEntitySet="ProviderService">
                 <ScalarProperty Name="ProviderServiceId" ColumnName="ProviderServiceId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5445,7 +5445,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderSpecialties">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderSpecialty">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderSpecialty">
               <MappingFragment StoreEntitySet="ProviderSpecialty">
                 <ScalarProperty Name="ProviderSpecialtyId" ColumnName="ProviderSpecialtyId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5454,7 +5454,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderTimings">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderTiming">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderTiming">
               <MappingFragment StoreEntitySet="ProviderTimings">
                 <ScalarProperty Name="ProviderTimingsId" ColumnName="ProviderTimingsId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5468,7 +5468,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderTreatments">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderTreatment">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderTreatment">
               <MappingFragment StoreEntitySet="ProviderTreatment">
                 <ScalarProperty Name="ProviderTreatmentId" ColumnName="ProviderTreatmentId" />
                 <ScalarProperty Name="TreatmentId" ColumnName="TreatmentId" />
@@ -5477,7 +5477,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderTypes">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderType">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderType">
               <MappingFragment StoreEntitySet="ProviderType">
                 <ScalarProperty Name="ProviderTypeId" ColumnName="ProviderTypeId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -5486,7 +5486,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ProviderVideos">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ProviderVideo">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ProviderVideo">
               <MappingFragment StoreEntitySet="ProviderVideo">
                 <ScalarProperty Name="ProviderVideoId" ColumnName="ProviderVideoId" />
                 <ScalarProperty Name="ProviderId" ColumnName="ProviderId" />
@@ -5499,7 +5499,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="RegistrationCouncils">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.RegistrationCouncil">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.RegistrationCouncil">
               <MappingFragment StoreEntitySet="RegistrationCouncil">
                 <ScalarProperty Name="RegistrationCouncilId" ColumnName="RegistrationCouncilId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -5508,7 +5508,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SecurityQuestions">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.SecurityQuestion">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.SecurityQuestion">
               <MappingFragment StoreEntitySet="SecurityQuestion">
                 <ScalarProperty Name="SecurityQuestionId" ColumnName="SecurityQuestionId" />
                 <ScalarProperty Name="Value" ColumnName="Value" />
@@ -5516,7 +5516,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Services">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Service">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Service">
               <MappingFragment StoreEntitySet="Service">
                 <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
                 <ScalarProperty Name="ServiceTypeId" ColumnName="ServiceTypeId" />
@@ -5526,7 +5526,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ServiceTypes">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.ServiceType">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.ServiceType">
               <MappingFragment StoreEntitySet="ServiceType">
                 <ScalarProperty Name="ServiceTypeId" ColumnName="ServiceTypeId" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
@@ -5534,7 +5534,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Specialties">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Specialty">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Specialty">
               <MappingFragment StoreEntitySet="Specialty">
                 <ScalarProperty Name="SpecialtyId" ColumnName="SpecialtyId" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
@@ -5543,7 +5543,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="States">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.State">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.State">
               <MappingFragment StoreEntitySet="State">
                 <ScalarProperty Name="StateId" ColumnName="StateId" />
                 <ScalarProperty Name="CountryId" ColumnName="CountryId" />
@@ -5552,7 +5552,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Treatments">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.Treatment">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.Treatment">
               <MappingFragment StoreEntitySet="Treatment">
                 <ScalarProperty Name="TreatmentId" ColumnName="TreatmentId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -5565,7 +5565,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Users">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.User">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.User">
               <MappingFragment StoreEntitySet="User">
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
@@ -5581,7 +5581,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="UserFeedbacks">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.UserFeedback">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.UserFeedback">
               <MappingFragment StoreEntitySet="UserFeedback">
                 <ScalarProperty Name="UserFeedbackId" ColumnName="UserFeedbackId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -5592,7 +5592,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="UserFollowDoctors">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.UserFollowDoctor">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.UserFollowDoctor">
               <MappingFragment StoreEntitySet="UserFollowDoctors">
                 <ScalarProperty Name="UserFollowDoctorsId" ColumnName="UserFollowDoctorsId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -5601,7 +5601,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="UserFollowPatients">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.UserFollowPatient">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.UserFollowPatient">
               <MappingFragment StoreEntitySet="UserFollowPatients">
                 <ScalarProperty Name="UserFollowPatientsId" ColumnName="UserFollowPatientsId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -5610,7 +5610,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="UserLoginAudits">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.UserLoginAudit">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.UserLoginAudit">
               <MappingFragment StoreEntitySet="UserLoginAudit">
                 <ScalarProperty Name="UserLoginAuditId" ColumnName="UserLoginAuditId" />
                 <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
@@ -5623,7 +5623,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="UserPrefrences">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.UserPrefrence">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.UserPrefrence">
               <MappingFragment StoreEntitySet="UserPrefrences">
                 <ScalarProperty Name="UserPrefrencesId" ColumnName="UserPrefrencesId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -5635,7 +5635,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="UserRoles">
-            <EntityTypeMapping TypeName="shiner49_CareHubModel.UserRole">
+            <EntityTypeMapping TypeName="shiner49_medicareModel.UserRole">
               <MappingFragment StoreEntitySet="UserRole">
                 <ScalarProperty Name="UserRoleId" ColumnName="UserRoleId" />
                 <ScalarProperty Name="RoleName" ColumnName="RoleName" />
